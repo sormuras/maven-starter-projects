@@ -15,6 +15,7 @@
     </properties>
 
     <modules>
+        <module>etc/apache-commons-io-2</module>
         <module>etc/apache-commons-lang-3</module>
         <module>etc/jackson-json-2</module>
         <module>etc/junit-4</module>

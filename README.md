@@ -11,11 +11,18 @@ java src/GenerateReadme.java > README.md
 
 |Project| Modules |
 |-------|---------|
+|[apache-commons-io-2](#apache-commons-io-2)|1 - 0 - 0|
 |[apache-commons-lang-3](#apache-commons-lang-3)|1 - 0 - 0|
 |[jackson-json-2](#jackson-json-2)|1 - 0 - 0|
 |[junit-4](#junit-4)|2 - 1 - 1|
 |[junit-5](#junit-5)|8 - 0 - 0|
 |[picocli-4](#picocli-4)|1 - 0 - 0|
+
+## apache-commons-io-2
+```
+The following files have been resolved:
+   commons-io:commons-io:jar:2.15.1:compile -- module org.apache.commons.io
+```
 
 ## apache-commons-lang-3
 ```
