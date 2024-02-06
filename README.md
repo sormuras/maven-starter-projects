@@ -15,6 +15,7 @@ java src/GenerateReadme.java > README.md
 |[jackson-json-2](#jackson-json-2)|1 - 0 - 0|
 |[junit-4](#junit-4)|2 - 1 - 1|
 |[junit-5](#junit-5)|8 - 0 - 0|
+|[picocli-4](#picocli-4)|1 - 0 - 0|
 
 ## apache-commons-lang-3
 ```
@@ -46,4 +47,10 @@ The following files have been resolved:
    org.junit.jupiter:junit-jupiter-params:jar:5.10.2:compile -- module org.junit.jupiter.params
    org.junit.jupiter:junit-jupiter-engine:jar:5.10.2:runtime -- module org.junit.jupiter.engine
    org.junit.platform:junit-platform-engine:jar:1.10.2:runtime -- module org.junit.platform.engine
+```
+
+## picocli-4
+```
+The following files have been resolved:
+   info.picocli:picocli:jar:4.7.5:compile -- module info.picocli
 ```

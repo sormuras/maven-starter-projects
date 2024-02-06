@@ -1,0 +1,15 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.sormuras.maven.starter.projects</groupId>
+    <artifactId>picocli-4</artifactId>
+    <version>1</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>info.picocli</groupId>
+            <artifactId>picocli</artifactId>
+            <version>4.7.5</version>
+        </dependency>
+    </dependencies>
+</project>
