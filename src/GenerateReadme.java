@@ -38,7 +38,7 @@ class GenerateReadme {
         var lines = Files.readAllLines(resolved);
         var modules = lines.stream().filter(line -> line.contains(" module ")).toList();
         var manifested = modules.stream().filter(line -> line.endsWith(" [auto]")).toList();
-        var filename = lines.stream().filter(line -> line.endsWith(" (auto)")).toList();
+        var filename = modules.stream().filter(line -> line.endsWith(" (auto)")).toList();
         System.out.print(modules.size() + " - " + manifested.size() + " - " + filename.size());
       } else {
         System.out.print(" - ");
