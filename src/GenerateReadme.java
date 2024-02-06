@@ -19,7 +19,7 @@ class GenerateReadme {
         ```
         """);
     var directories = new ArrayList<Path>();
-    try (var stream = Files.newDirectoryStream(Path.of(""), GenerateReadme::isProjectDirectory)) {
+    try (var stream = Files.newDirectoryStream(Path.of("etc"), GenerateReadme::isProjectDirectory)) {
       stream.forEach(directories::add);
     }
     directories.sort(Comparator.comparing(Path::toString));

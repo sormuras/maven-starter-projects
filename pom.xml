@@ -15,8 +15,8 @@
     </properties>
 
     <modules>
-        <module>jackson-json-2</module>
-        <module>junit-4</module>
-        <module>junit-5</module>
+        <module>etc/jackson-json-2</module>
+        <module>etc/junit-4</module>
+        <module>etc/junit-5</module>
     </modules>
 </project>

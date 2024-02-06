@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.sormuras.modules.doc.maven</groupId>
+    <groupId>com.github.sormuras.maven.starter.projects</groupId>
     <artifactId>junit-5</artifactId>
     <version>1</version>
 
