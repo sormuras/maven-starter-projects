@@ -11,9 +11,16 @@ java src/GenerateReadme.java > README.md
 
 |Project| Modules |
 |-------|---------|
+|[apache-commons-lang-3](#apache-commons-lang-3)|1 - 0 - 0|
 |[jackson-json-2](#jackson-json-2)|1 - 0 - 0|
 |[junit-4](#junit-4)|2 - 1 - 1|
 |[junit-5](#junit-5)|8 - 0 - 0|
+
+## apache-commons-lang-3
+```
+The following files have been resolved:
+   org.apache.commons:commons-lang3:jar:3.14.0:compile -- module org.apache.commons.lang3
+```
 
 ## jackson-json-2
 ```
