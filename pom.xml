@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.sormuras.maven.starter.projects</groupId>
+    <artifactId>maven-starter-projects</artifactId>
+    <version>1</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <module>jackson-json-2</module>
+        <module>junit-4</module>
+        <module>junit-5</module>
+    </modules>
+</project>
