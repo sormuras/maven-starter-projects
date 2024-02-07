@@ -13,12 +13,15 @@ class GenerateReadme {
         This repository curates a list of projects with minimal dependencies.
         Each project is stored as a Maven submodule in the [etc/](etc/) directory.
         The `pom.xml` file of a project usually contains a single `<dependency>` element.
-        All dependencies, including transitive onces, are then resolved by the standard [maven-dependency-plugin](https://maven.apache.org/plugins/maven-dependency-plugin/).
+        All dependencies, including transitive ones, are then resolved by the standard [maven-dependency-plugin](https://maven.apache.org/plugins/maven-dependency-plugin/).
 
-        The numbers in the Modules colums, for example `8 - 2 - 1`, are in order of appearance:
-        - `8` the total amount of resolved artifacts.
-        - `2` the amount of automatic Java modules, with their **stable** module name derived from their `Automatic-Module-Name` manifest entry.
-        - `1` the amount of automatic Java modules, with their **not** stable module name derived from their archive filename.
+        The numbers in the Modules columns, for example `8 - 3 - 2`, are in order of appearance:
+        - `8` is the total amount of resolved artifacts
+        - `3` automatic modules, with their **stable** name derived from an `Automatic-Module-Name` manifest entry
+        - `2` automatic modules, with their **not** stable name derived from the archive filename
+
+        An `* - 0 - 0` indicates an 100% modularized project:
+        its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipafx.dev/java-modules-jpms-maturity-model/).
         """);
     var directories = new ArrayList<Path>();
     try (var stream =
@@ -52,6 +55,7 @@ class GenerateReadme {
     System.out.println(
         // language=markdown
         """
+        ---
         Rebuild the `README.md` file by running the following commands:
         ```shell
         mvn --batch-mode --no-transfer-progress -DoutputFile=resolved.txt dependency:resolve
