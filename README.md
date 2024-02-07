@@ -1,13 +1,14 @@
-# maven-starter-projects
+# Maven Starter Projects
 
-Maven-based Starter Projects
+This repository curates a list of projects with minimal dependencies.
+Each project is stored as a Maven submodule in the [etc/](etc/) directory.
+The `pom.xml` file of a project usually contains a single `<dependency>` element.
+All dependencies, including transitive onces, are then resolved by the standard [maven-dependency-plugin](https://maven.apache.org/plugins/maven-dependency-plugin/).
 
-```shell
-mvn --batch-mode --no-transfer-progress -DoutputFile=resolved.txt dependency:resolve
-```
-```shell
-java src/GenerateReadme.java > README.md
-```
+The numbers in the Modules colums, for example `8 - 2 - 1`, are in order of appearance:
+- `8` the total amount of resolved artifacts.
+- `2` the amount of automatic Java modules, with their **stable** module name derived from their `Automatic-Module-Name` manifest entry.
+- `1` the amount of automatic Java modules, with their **not** stable module name derived from their archive filename.
 
 |Project| Modules |
 |-------|---------|
@@ -17,6 +18,14 @@ java src/GenerateReadme.java > README.md
 |[junit-4](#junit-4)|2 - 1 - 1|
 |[junit-5](#junit-5)|8 - 0 - 0|
 |[picocli-4](#picocli-4)|1 - 0 - 0|
+Rebuild the `README.md` file by running the following commands:
+```shell
+mvn --batch-mode --no-transfer-progress -DoutputFile=resolved.txt dependency:resolve
+```
+```shell
+java src/GenerateReadme.java > README.md
+```
+
 
 ## apache-commons-io-2
 ```
