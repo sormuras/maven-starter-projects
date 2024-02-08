@@ -2,7 +2,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.sormuras.maven.starter.projects</groupId>
+    <groupId>org.example</groupId>
     <artifactId>apache-commons-lang-3</artifactId>
     <version>1</version>
 
