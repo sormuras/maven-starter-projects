@@ -27,6 +27,7 @@
         <module>etc/jackson-databind-2</module>
         <module>etc/junit-4</module>
         <module>etc/junit-5</module>
+        <module>etc/micronaut-4</module>
         <module>etc/picocli-4</module>
         <module>etc/quarkus-3</module>
         <module>etc/slf4j-2</module>

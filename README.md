@@ -27,6 +27,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[jackson-databind-2](#jackson-databind-2)|3 - 0 - 0|
 |[junit-4](#junit-4)|2 - 1 - 1|
 |[junit-5](#junit-5)|8 - 0 - 0|
+|[micronaut-4](#micronaut-4)|35 - 28 - 0|
 |[picocli-4](#picocli-4)|1 - 0 - 0|
 |[quarkus-3](#quarkus-3)|102 - 29 - 41|
 |[slf4j-2](#slf4j-2)|1 - 0 - 0|
@@ -198,6 +199,46 @@ The following files have been resolved:
    org.junit.jupiter:junit-jupiter-params:jar:5.10.2:compile -- module org.junit.jupiter.params
    org.junit.jupiter:junit-jupiter-engine:jar:5.10.2:runtime -- module org.junit.jupiter.engine
    org.junit.platform:junit-platform-engine:jar:1.10.2:runtime -- module org.junit.platform.engine
+```
+
+## micronaut-4
+```
+The following files have been resolved:
+   io.micronaut:micronaut-http-server-netty:jar:4.3.4:compile -- module io.micronaut.http_server_netty [auto]
+   org.slf4j:slf4j-api:jar:2.0.11:compile -- module org.slf4j
+   io.micronaut:micronaut-http-server:jar:4.3.4:compile -- module io.micronaut.http_server [auto]
+   io.micronaut:micronaut-http:jar:4.3.4:compile -- module io.micronaut.http [auto]
+   io.micronaut:micronaut-core-reactive:jar:4.3.4:compile -- module io.micronaut.core_reactive [auto]
+   io.micronaut:micronaut-context-propagation:jar:4.3.4:runtime -- module io.micronaut.context_propagation [auto]
+   io.micronaut:micronaut-router:jar:4.3.4:compile -- module io.micronaut.router [auto]
+   io.micronaut:micronaut-core:jar:4.3.4:compile -- module io.micronaut.core [auto]
+   io.micronaut:micronaut-http-netty:jar:4.3.4:compile -- module io.micronaut.http_netty [auto]
+   io.micronaut:micronaut-buffer-netty:jar:4.3.4:compile -- module io.micronaut.buffer_netty [auto]
+   io.netty:netty-codec-http2:jar:4.1.106.Final:compile -- module io.netty.codec.http2 [auto]
+   io.netty:netty-handler:jar:4.1.106.Final:compile -- module io.netty.handler [auto]
+   io.netty:netty-resolver:jar:4.1.106.Final:compile -- module io.netty.resolver [auto]
+   io.netty:netty-transport-native-unix-common:jar:4.1.106.Final:compile -- module io.netty.transport.unix.common [auto]
+   io.netty:netty-codec-http:jar:4.1.106.Final:compile -- module io.netty.codec.http [auto]
+   io.netty:netty-common:jar:4.1.106.Final:compile -- module io.netty.common [auto]
+   io.netty:netty-buffer:jar:4.1.106.Final:compile -- module io.netty.buffer [auto]
+   io.netty:netty-transport:jar:4.1.106.Final:compile -- module io.netty.transport [auto]
+   io.netty:netty-codec:jar:4.1.106.Final:compile -- module io.netty.codec [auto]
+   io.projectreactor:reactor-core:jar:3.5.11:runtime -- module reactor.core [auto]
+   org.reactivestreams:reactive-streams:jar:1.0.4:compile -- module org.reactivestreams [auto]
+   io.micronaut.serde:micronaut-serde-jackson:jar:2.8.1:compile -- module io.micronaut.serde.micronaut_serde_jackson [auto]
+   io.micronaut:micronaut-inject:jar:4.3.4:compile -- module io.micronaut.inject [auto]
+   jakarta.inject:jakarta.inject-api:jar:2.0.1:compile -- module jakarta.inject
+   jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile -- module jakarta.annotation
+   io.micronaut:micronaut-jackson-core:jar:4.3.4:compile -- module io.micronaut.jackson_core [auto]
+   io.micronaut:micronaut-json-core:jar:4.3.4:compile -- module io.micronaut.json_core [auto]
+   com.fasterxml.jackson.core:jackson-core:jar:2.16.1:compile -- module com.fasterxml.jackson.core
+   com.fasterxml.jackson.core:jackson-annotations:jar:2.16.1:compile -- module com.fasterxml.jackson.annotation
+   io.micronaut:micronaut-context:jar:4.3.4:compile -- module io.micronaut.context [auto]
+   io.micronaut:micronaut-aop:jar:4.3.4:compile -- module io.micronaut.aop [auto]
+   io.micronaut.serde:micronaut-serde-api:jar:2.8.1:compile -- module io.micronaut.serde.micronaut_serde_api [auto]
+   io.micronaut.serde:micronaut-serde-support:jar:2.8.1:runtime -- module io.micronaut.serde.micronaut_serde_support [auto]
+   ch.qos.logback:logback-classic:jar:1.4.14:runtime -- module ch.qos.logback.classic
+   ch.qos.logback:logback-core:jar:1.4.14:runtime -- module ch.qos.logback.core
 ```
 
 ## picocli-4
