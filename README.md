@@ -15,6 +15,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 
 |Project| Modules |
 |-------|---------|
+|[apache-commons-exec-1](#apache-commons-exec-1)|1 - 0 - 0|
 |[apache-commons-io-2](#apache-commons-io-2)|1 - 0 - 0|
 |[apache-commons-lang-3](#apache-commons-lang-3)|1 - 0 - 0|
 |[gson-2](#gson-2)|1 - 0 - 0|
@@ -44,6 +45,12 @@ java src/GenerateReadme.java > README.md
 ```
 ---
 
+
+## apache-commons-exec-1
+```
+The following files have been resolved:
+   org.apache.commons:commons-exec:jar:1.4.0:compile -- module org.apache.commons.exec
+```
 
 ## apache-commons-io-2
 ```
