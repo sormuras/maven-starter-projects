@@ -56,6 +56,11 @@ class GenerateReadme {
         // language=markdown
         """
         ---
+        Add a new project by running:
+        ```shell
+        java src/AddProject.java <Name> <GroupId>:<ArtifactId>:<Version>
+        ```
+        ---
         Rebuild the `README.md` file by running the following commands:
         ```shell
         mvn --batch-mode --no-transfer-progress -DoutputFile=resolved.txt dependency:resolve
