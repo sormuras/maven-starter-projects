@@ -17,10 +17,12 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |-------|---------|
 |[apache-commons-io-2](#apache-commons-io-2)|1 - 0 - 0|
 |[apache-commons-lang-3](#apache-commons-lang-3)|1 - 0 - 0|
+|[guava-33](#guava-33)|7 - 4 - 3|
 |[jackson-json-2](#jackson-json-2)|1 - 0 - 0|
 |[junit-4](#junit-4)|2 - 1 - 1|
 |[junit-5](#junit-5)|8 - 0 - 0|
 |[picocli-4](#picocli-4)|1 - 0 - 0|
+|[slf4j-2](#slf4j-2)|1 - 0 - 0|
 |[snakeyaml-2](#snakeyaml-2)|1 - 0 - 0|
 ---
 Add a new project by running:
@@ -47,6 +49,18 @@ The following files have been resolved:
 ```
 The following files have been resolved:
    org.apache.commons:commons-lang3:jar:3.14.0:compile -- module org.apache.commons.lang3
+```
+
+## guava-33
+```
+The following files have been resolved:
+   com.google.guava:guava:jar:33.0.0-jre:compile -- module com.google.common [auto]
+   com.google.guava:failureaccess:jar:1.0.2:compile -- module com.google.common.util.concurrent.internal [auto]
+   com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile -- module listenablefuture (auto)
+   com.google.code.findbugs:jsr305:jar:3.0.2:compile -- module jsr305 (auto)
+   org.checkerframework:checker-qual:jar:3.41.0:compile -- module org.checkerframework.checker.qual [auto]
+   com.google.errorprone:error_prone_annotations:jar:2.23.0:compile -- module com.google.errorprone.annotations [auto]
+   com.google.j2objc:j2objc-annotations:jar:2.8:compile -- module j2objc.annotations (auto)
 ```
 
 ## jackson-json-2
@@ -79,6 +93,12 @@ The following files have been resolved:
 ```
 The following files have been resolved:
    info.picocli:picocli:jar:4.7.5:compile -- module info.picocli
+```
+
+## slf4j-2
+```
+The following files have been resolved:
+   org.slf4j:slf4j-api:jar:2.0.12:compile -- module org.slf4j
 ```
 
 ## snakeyaml-2
