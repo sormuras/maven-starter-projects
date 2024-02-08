@@ -22,6 +22,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[asm-9](#asm-9)|1 - 0 - 0|
 |[gson-2](#gson-2)|1 - 0 - 0|
 |[guava-33](#guava-33)|7 - 4 - 3|
+|[jackson-databind-2](#jackson-databind-2)|3 - 0 - 0|
 |[jackson-json-2](#jackson-json-2)|1 - 0 - 0|
 |[junit-4](#junit-4)|2 - 1 - 1|
 |[junit-5](#junit-5)|8 - 0 - 0|
@@ -94,6 +95,14 @@ The following files have been resolved:
    org.checkerframework:checker-qual:jar:3.41.0:compile -- module org.checkerframework.checker.qual [auto]
    com.google.errorprone:error_prone_annotations:jar:2.23.0:compile -- module com.google.errorprone.annotations [auto]
    com.google.j2objc:j2objc-annotations:jar:2.8:compile -- module j2objc.annotations (auto)
+```
+
+## jackson-databind-2
+```
+The following files have been resolved:
+   com.fasterxml.jackson.core:jackson-databind:jar:2.16.1:compile -- module com.fasterxml.jackson.databind
+   com.fasterxml.jackson.core:jackson-annotations:jar:2.16.1:compile -- module com.fasterxml.jackson.annotation
+   com.fasterxml.jackson.core:jackson-core:jar:2.16.1:compile -- module com.fasterxml.jackson.core
 ```
 
 ## jackson-json-2
