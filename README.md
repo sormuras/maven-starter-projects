@@ -18,6 +18,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[apache-commons-exec-1](#apache-commons-exec-1)|1 - 0 - 0|
 |[apache-commons-io-2](#apache-commons-io-2)|1 - 0 - 0|
 |[apache-commons-lang-3](#apache-commons-lang-3)|1 - 0 - 0|
+|[asm-9](#asm-9)|1 - 0 - 0|
 |[gson-2](#gson-2)|1 - 0 - 0|
 |[guava-33](#guava-33)|7 - 4 - 3|
 |[jackson-json-2](#jackson-json-2)|1 - 0 - 0|
@@ -62,6 +63,12 @@ The following files have been resolved:
 ```
 The following files have been resolved:
    org.apache.commons:commons-lang3:jar:3.14.0:compile -- module org.apache.commons.lang3
+```
+
+## asm-9
+```
+The following files have been resolved:
+   org.ow2.asm:asm:jar:9.6:compile -- module org.objectweb.asm
 ```
 
 ## gson-2
