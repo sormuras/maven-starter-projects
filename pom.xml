@@ -17,6 +17,7 @@
     <modules>
         <module>etc/apache-commons-io-2</module>
         <module>etc/apache-commons-lang-3</module>
+        <module>etc/gson-2</module>
         <module>etc/guava-33</module>
         <module>etc/jackson-json-2</module>
         <module>etc/junit-4</module>
