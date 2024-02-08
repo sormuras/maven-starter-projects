@@ -22,6 +22,7 @@
         <module>etc/asm-9</module>
         <module>etc/gson-2</module>
         <module>etc/guava-33</module>
+        <module>etc/helidon-se-4</module>
         <module>etc/jackson-core-2</module>
         <module>etc/jackson-databind-2</module>
         <module>etc/junit-4</module>
