@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>jackson-json-2</artifactId>
+    <artifactId>jackson-core-2</artifactId>
     <version>1</version>
 
     <dependencies>
