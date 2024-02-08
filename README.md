@@ -28,6 +28,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[junit-4](#junit-4)|2 - 1 - 1|
 |[junit-5](#junit-5)|8 - 0 - 0|
 |[picocli-4](#picocli-4)|1 - 0 - 0|
+|[quarkus-3](#quarkus-3)|102 - 29 - 41|
 |[slf4j-2](#slf4j-2)|1 - 0 - 0|
 |[snakeyaml-2](#snakeyaml-2)|1 - 0 - 0|
 |[spring-boot-3](#spring-boot-3)|20 - 12 - 0|
@@ -203,6 +204,113 @@ The following files have been resolved:
 ```
 The following files have been resolved:
    info.picocli:picocli:jar:4.7.5:compile -- module info.picocli
+```
+
+## quarkus-3
+```
+The following files have been resolved:
+   io.quarkus:quarkus-arc:jar:3.7.2:compile -- module quarkus.arc (auto)
+   io.quarkus.arc:arc:jar:3.7.2:compile -- module arc (auto)
+   jakarta.enterprise:jakarta.enterprise.cdi-api:jar:4.0.1:compile -- module jakarta.cdi
+   jakarta.enterprise:jakarta.enterprise.lang-model:jar:4.0.1:compile -- module jakarta.cdi.lang.model
+   jakarta.el:jakarta.el-api:jar:5.0.1:compile -- module jakarta.el
+   jakarta.interceptor:jakarta.interceptor-api:jar:2.1.0:compile -- module jakarta.interceptor
+   jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile -- module jakarta.annotation
+   jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile -- module jakarta.transaction
+   io.smallrye.reactive:mutiny:jar:2.5.6:compile -- module io.smallrye.mutiny
+   io.smallrye.common:smallrye-common-annotation:jar:2.1.2:compile -- module io.smallrye.common.annotation
+   org.jboss.logging:jboss-logging:jar:3.5.3.Final:compile -- module org.jboss.logging
+   io.quarkus:quarkus-core:jar:3.7.2:compile -- module quarkus.core (auto)
+   jakarta.inject:jakarta.inject-api:jar:2.0.1:compile -- module jakarta.inject
+   io.smallrye.common:smallrye-common-os:jar:2.1.2:compile -- module io.smallrye.common.os
+   io.quarkus:quarkus-ide-launcher:jar:3.7.2:compile -- module quarkus.ide.launcher (auto)
+   io.quarkus:quarkus-development-mode-spi:jar:3.7.2:compile -- module quarkus.development.mode.spi (auto)
+   io.smallrye.config:smallrye-config:jar:3.5.4:compile -- module smallrye.config (auto)
+   io.smallrye.config:smallrye-config-core:jar:3.5.4:compile -- module smallrye.config.core (auto)
+   org.eclipse.microprofile.config:microprofile-config-api:jar:3.0.3:compile -- module microprofile.config.api (auto)
+   io.smallrye.common:smallrye-common-classloader:jar:2.1.2:compile -- module io.smallrye.common.classloader
+   io.smallrye.config:smallrye-config-common:jar:3.5.4:compile -- module smallrye.config.common (auto)
+   org.jboss.logmanager:jboss-logmanager:jar:3.0.4.Final:compile -- module org.jboss.logmanager
+   io.smallrye.common:smallrye-common-constraint:jar:2.1.2:compile -- module io.smallrye.common.constraint
+   io.smallrye.common:smallrye-common-cpu:jar:2.1.2:compile -- module io.smallrye.common.cpu
+   io.smallrye.common:smallrye-common-expression:jar:2.1.2:compile -- module io.smallrye.common.expression
+   io.smallrye.common:smallrye-common-function:jar:2.1.2:compile -- module io.smallrye.common.function
+   io.smallrye.common:smallrye-common-net:jar:2.1.2:compile -- module io.smallrye.common.net
+   io.smallrye.common:smallrye-common-ref:jar:2.1.2:compile -- module io.smallrye.common.ref
+   jakarta.json:jakarta.json-api:jar:2.1.3:compile -- module jakarta.json
+   org.jboss.logging:jboss-logging-annotations:jar:2.2.1.Final:compile -- module jboss.logging.annotations (auto)
+   org.jboss.threads:jboss-threads:jar:3.5.1.Final:compile -- module jboss.threads (auto)
+   org.slf4j:slf4j-api:jar:2.0.6:compile -- module org.slf4j
+   org.jboss.slf4j:slf4j-jboss-logmanager:jar:2.0.0.Final:compile -- module slf4j.jboss.logmanager (auto)
+   org.wildfly.common:wildfly-common:jar:1.7.0.Final:compile -- module wildfly.common (auto)
+   io.quarkus:quarkus-bootstrap-runner:jar:3.7.2:compile -- module quarkus.bootstrap.runner (auto)
+   io.smallrye.common:smallrye-common-io:jar:2.1.2:compile -- module io.smallrye.common.io
+   io.quarkus:quarkus-fs-util:jar:0.0.10:compile -- module quarkus.fs.util (auto)
+   org.eclipse.microprofile.context-propagation:microprofile-context-propagation-api:jar:1.3:compile -- module microprofile.context.propagation.api (auto)
+   io.quarkus:quarkus-resteasy-reactive:jar:3.7.2:compile -- module quarkus.resteasy.reactive (auto)
+   io.quarkus:quarkus-resteasy-reactive-common:jar:3.7.2:compile -- module quarkus.resteasy.reactive.common (auto)
+   io.quarkus.resteasy.reactive:resteasy-reactive-common:jar:3.7.2:compile -- module resteasy.reactive.common (auto)
+   io.quarkus.resteasy.reactive:resteasy-reactive-common-types:jar:3.7.2:compile -- module resteasy.reactive.common.types (auto)
+   org.reactivestreams:reactive-streams:jar:1.0.4:compile -- module org.reactivestreams [auto]
+   io.smallrye.reactive:mutiny-zero-flow-adapters:jar:1.0.0:compile -- module mutiny.zero.flow.adapters
+   io.quarkus:quarkus-mutiny:jar:3.7.2:compile -- module quarkus.mutiny (auto)
+   io.quarkus:quarkus-smallrye-context-propagation:jar:3.7.2:compile -- module quarkus.smallrye.context.propagation (auto)
+   io.smallrye:smallrye-context-propagation:jar:2.1.0:compile -- module smallrye.context.propagation (auto)
+   io.smallrye:smallrye-context-propagation-api:jar:2.1.0:compile -- module smallrye.context.propagation.api (auto)
+   io.smallrye:smallrye-context-propagation-storage:jar:2.1.0:compile -- module smallrye.context.propagation.storage (auto)
+   io.smallrye.reactive:mutiny-smallrye-context-propagation:jar:2.5.6:compile -- module mutiny.smallrye.context.propagation (auto)
+   io.quarkus:quarkus-vertx:jar:3.7.2:compile -- module quarkus.vertx (auto)
+   io.quarkus:quarkus-netty:jar:3.7.2:compile -- module quarkus.netty (auto)
+   io.netty:netty-codec:jar:4.1.106.Final:compile -- module io.netty.codec [auto]
+   com.aayushatharva.brotli4j:brotli4j:jar:1.12.0:compile -- module com.aayushatharva.brotli4j
+   com.aayushatharva.brotli4j:service:jar:1.12.0:compile -- module com.aayushatharva.brotli4j.service
+   com.aayushatharva.brotli4j:native-windows-x86_64:jar:1.12.0:compile -- module com.aayushatharva.brotli4j.windows.x86_64
+   io.netty:netty-codec-haproxy:jar:4.1.106.Final:compile -- module io.netty.codec.haproxy [auto]
+   io.quarkus:quarkus-vertx-latebound-mdc-provider:jar:3.7.2:compile -- module quarkus.vertx.latebound.mdc.provider (auto)
+   io.smallrye:smallrye-fault-tolerance-vertx:jar:6.2.6:compile -- module smallrye.fault.tolerance.vertx (auto)
+   io.quarkus.resteasy.reactive:resteasy-reactive-vertx:jar:3.7.2:compile -- module resteasy.reactive.vertx (auto)
+   io.vertx:vertx-web:jar:4.5.3:compile -- module io.vertx.web [auto]
+   io.vertx:vertx-web-common:jar:4.5.3:compile -- module io.vertx.web.common [auto]
+   io.vertx:vertx-auth-common:jar:4.5.3:compile -- module io.vertx.auth.common [auto]
+   io.vertx:vertx-bridge-common:jar:4.5.3:compile -- module io.vertx.eventbusbridge.common [auto]
+   io.smallrye.reactive:smallrye-mutiny-vertx-core:jar:3.8.0:compile -- module io.smallrye.mutiny.vertx.core [auto]
+   io.smallrye.reactive:smallrye-mutiny-vertx-runtime:jar:3.8.0:compile -- module io.smallrye.mutiny.vertx.runtime [auto]
+   io.smallrye.reactive:vertx-mutiny-generator:jar:3.8.0:compile -- module vertx.mutiny.generator (auto)
+   io.vertx:vertx-codegen:jar:4.5.3:compile -- module io.vertx.codegen [auto]
+   io.quarkus.resteasy.reactive:resteasy-reactive:jar:3.7.2:compile -- module resteasy.reactive (auto)
+   jakarta.ws.rs:jakarta.ws.rs-api:jar:3.1.0:compile -- module jakarta.ws.rs
+   org.jboss.logging:commons-logging-jboss-logging:jar:1.0.0.Final:compile -- module commons.logging.jboss.logging (auto)
+   jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.1:compile -- module jakarta.xml.bind
+   jakarta.activation:jakarta.activation-api:jar:2.1.2:compile -- module jakarta.activation
+   io.quarkus:quarkus-vertx-http:jar:3.7.2:compile -- module quarkus.vertx.http (auto)
+   io.quarkus:quarkus-security-runtime-spi:jar:3.7.2:compile -- module quarkus.security.runtime.spi (auto)
+   io.quarkus:quarkus-credentials:jar:3.7.2:compile -- module quarkus.credentials (auto)
+   io.smallrye.common:smallrye-common-vertx-context:jar:2.1.2:compile -- module io.smallrye.common.vertx
+   io.quarkus.security:quarkus-security:jar:2.0.3.Final:compile -- module quarkus.security (auto)
+   io.smallrye.reactive:smallrye-mutiny-vertx-web:jar:3.8.0:compile -- module io.smallrye.mutiny.vertx.web [auto]
+   io.smallrye.reactive:smallrye-mutiny-vertx-web-common:jar:3.8.0:compile -- module io.smallrye.mutiny.vertx.web.common [auto]
+   io.smallrye.reactive:smallrye-mutiny-vertx-auth-common:jar:3.8.0:compile -- module io.smallrye.mutiny.vertx.auth.common [auto]
+   io.smallrye.reactive:smallrye-mutiny-vertx-bridge-common:jar:3.8.0:compile -- module io.smallrye.mutiny.vertx.bridge.common [auto]
+   io.smallrye.reactive:smallrye-mutiny-vertx-uri-template:jar:3.8.0:compile -- module io.smallrye.mutiny.vertx.uri.template [auto]
+   io.vertx:vertx-uri-template:jar:4.5.3:compile -- module io.vertx.uritemplate [auto]
+   io.github.crac:org-crac:jar:0.1.3:compile -- module org.crac (auto)
+   io.quarkus:quarkus-jsonp:jar:3.7.2:compile -- module quarkus.jsonp (auto)
+   org.eclipse.parsson:parsson:jar:1.1.5:compile -- module org.eclipse.parsson
+   io.quarkus:quarkus-virtual-threads:jar:3.7.2:compile -- module quarkus.virtual.threads (auto)
+   io.vertx:vertx-core:jar:4.5.3:compile -- module io.vertx.core [auto]
+   io.netty:netty-common:jar:4.1.106.Final:compile -- module io.netty.common [auto]
+   io.netty:netty-buffer:jar:4.1.106.Final:compile -- module io.netty.buffer [auto]
+   io.netty:netty-transport:jar:4.1.106.Final:compile -- module io.netty.transport [auto]
+   io.netty:netty-handler:jar:4.1.106.Final:compile -- module io.netty.handler [auto]
+   io.netty:netty-transport-native-unix-common:jar:4.1.106.Final:compile -- module io.netty.transport.unix.common [auto]
+   io.netty:netty-handler-proxy:jar:4.1.106.Final:compile -- module io.netty.handler.proxy [auto]
+   io.netty:netty-codec-socks:jar:4.1.106.Final:compile -- module io.netty.codec.socks [auto]
+   io.netty:netty-codec-http:jar:4.1.106.Final:compile -- module io.netty.codec.http [auto]
+   io.netty:netty-codec-http2:jar:4.1.106.Final:compile -- module io.netty.codec.http2 [auto]
+   io.netty:netty-resolver:jar:4.1.106.Final:compile -- module io.netty.resolver [auto]
+   io.netty:netty-resolver-dns:jar:4.1.106.Final:compile -- module io.netty.resolver.dns [auto]
+   io.netty:netty-codec-dns:jar:4.1.106.Final:compile -- module io.netty.codec.dns [auto]
+   com.fasterxml.jackson.core:jackson-core:jar:2.16.1:compile -- module com.fasterxml.jackson.core
 ```
 
 ## slf4j-2
