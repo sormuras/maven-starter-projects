@@ -33,6 +33,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[slf4j-2](#slf4j-2)| 1 | 1 | 0 | 0 |
 |[snakeyaml-2](#snakeyaml-2)| 1 | 1 | 0 | 0 |
 |[spring-boot-3](#spring-boot-3)| 20 | 8 | 12 | 0 |
+|[streamex-0](#streamex-0)| 1 | 1 | 0 | 0 |
 ---
 Add a new project by running and edit the generated `etc/<Name>/pom.xml` file if required:
 - `<Name>` is short directory name describing the project
@@ -387,4 +388,10 @@ The following files have been resolved:
    org.springframework:spring-core:jar:6.1.3:compile -- module spring.core [auto]
    org.springframework:spring-jcl:jar:6.1.3:compile -- module spring.jcl [auto]
    org.yaml:snakeyaml:jar:2.2:compile -- module org.yaml.snakeyaml
+```
+
+## streamex-0
+```
+The following files have been resolved:
+   one.util:streamex:jar:0.8.2:compile -- module one.util.streamex
 ```
