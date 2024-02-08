@@ -29,6 +29,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[picocli-4](#picocli-4)|1 - 0 - 0|
 |[slf4j-2](#slf4j-2)|1 - 0 - 0|
 |[snakeyaml-2](#snakeyaml-2)|1 - 0 - 0|
+|[spring-boot-3](#spring-boot-3)|20 - 12 - 0|
 ---
 Add a new project by running:
 ```shell
@@ -146,5 +147,30 @@ The following files have been resolved:
 ## snakeyaml-2
 ```
 The following files have been resolved:
+   org.yaml:snakeyaml:jar:2.2:compile -- module org.yaml.snakeyaml
+```
+
+## spring-boot-3
+```
+The following files have been resolved:
+   org.springframework.boot:spring-boot-starter:jar:3.2.2:compile -- module spring.boot.starter [auto]
+   org.springframework.boot:spring-boot:jar:3.2.2:compile -- module spring.boot [auto]
+   org.springframework:spring-context:jar:6.1.3:compile -- module spring.context [auto]
+   org.springframework:spring-aop:jar:6.1.3:compile -- module spring.aop [auto]
+   org.springframework:spring-beans:jar:6.1.3:compile -- module spring.beans [auto]
+   org.springframework:spring-expression:jar:6.1.3:compile -- module spring.expression [auto]
+   io.micrometer:micrometer-observation:jar:1.12.2:compile -- module micrometer.observation [auto]
+   io.micrometer:micrometer-commons:jar:1.12.2:compile -- module micrometer.commons [auto]
+   org.springframework.boot:spring-boot-autoconfigure:jar:3.2.2:compile -- module spring.boot.autoconfigure [auto]
+   org.springframework.boot:spring-boot-starter-logging:jar:3.2.2:compile -- module spring.boot.starter.logging [auto]
+   ch.qos.logback:logback-classic:jar:1.4.14:compile -- module ch.qos.logback.classic
+   ch.qos.logback:logback-core:jar:1.4.14:compile -- module ch.qos.logback.core
+   org.slf4j:slf4j-api:jar:2.0.11:compile -- module org.slf4j
+   org.apache.logging.log4j:log4j-to-slf4j:jar:2.21.1:compile -- module org.apache.logging.log4j.to.slf4j
+   org.apache.logging.log4j:log4j-api:jar:2.21.1:compile -- module org.apache.logging.log4j
+   org.slf4j:jul-to-slf4j:jar:2.0.11:compile -- module jul.to.slf4j
+   jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile -- module jakarta.annotation
+   org.springframework:spring-core:jar:6.1.3:compile -- module spring.core [auto]
+   org.springframework:spring-jcl:jar:6.1.3:compile -- module spring.jcl [auto]
    org.yaml:snakeyaml:jar:2.2:compile -- module org.yaml.snakeyaml
 ```

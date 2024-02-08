@@ -29,5 +29,6 @@
         <module>etc/picocli-4</module>
         <module>etc/slf4j-2</module>
         <module>etc/snakeyaml-2</module>
+        <module>etc/spring-boot-3</module>
     </modules>
 </project>
