@@ -21,6 +21,12 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[junit-4](#junit-4)|2 - 1 - 1|
 |[junit-5](#junit-5)|8 - 0 - 0|
 |[picocli-4](#picocli-4)|1 - 0 - 0|
+|[snakeyaml-2](#snakeyaml-2)|1 - 0 - 0|
+---
+Add a new project by running:
+```shell
+java src/AddProject.java <Name> <GroupId>:<ArtifactId>:<Version>
+```
 ---
 Rebuild the `README.md` file by running the following commands:
 ```shell
@@ -73,4 +79,10 @@ The following files have been resolved:
 ```
 The following files have been resolved:
    info.picocli:picocli:jar:4.7.5:compile -- module info.picocli
+```
+
+## snakeyaml-2
+```
+The following files have been resolved:
+   org.yaml:snakeyaml:jar:2.2:compile -- module org.yaml.snakeyaml
 ```
