@@ -60,14 +60,19 @@ class GenerateReadme {
         ```shell
         java src/AddProject.java <Name> <GroupId>:<ArtifactId>:<Version>
         ```
+        - `<Name>` is short directory name describing the project
+        - `<GroupId>:<ArtifactId>:<Version>` is a Maven coordinate to add as a dependency
+
+        Edit the generated `etc/<Name>/pom.xml` file as required. 
         ---
         Rebuild the `README.md` file by running the following commands:
         ```shell
-        mvn --batch-mode --no-transfer-progress -DoutputFile=resolved.txt dependency:resolve
+        mvn --batch-mode --no-transfer-progress -DoutputFile=resolved.txt org.apache.maven.plugins:maven-dependency-plugin:3.6.1:resolve
         ```
         ```shell
         java src/GenerateReadme.java > README.md
         ```
+        ---
         """);
 
     // project details
