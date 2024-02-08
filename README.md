@@ -15,6 +15,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 
 |Project| Modules |
 |-------|---------|
+|[apache-commons-codec-1](#apache-commons-codec-1)|1 - 1 - 0|
 |[apache-commons-exec-1](#apache-commons-exec-1)|1 - 0 - 0|
 |[apache-commons-io-2](#apache-commons-io-2)|1 - 0 - 0|
 |[apache-commons-lang-3](#apache-commons-lang-3)|1 - 0 - 0|
@@ -46,6 +47,12 @@ java src/GenerateReadme.java > README.md
 ```
 ---
 
+
+## apache-commons-codec-1
+```
+The following files have been resolved:
+   commons-codec:commons-codec:jar:1.16.0:compile -- module org.apache.commons.codec [auto]
+```
 
 ## apache-commons-exec-1
 ```
