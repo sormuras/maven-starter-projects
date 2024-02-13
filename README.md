@@ -25,6 +25,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[helidon-se-4](#helidon-se-4)| 61 | 50 | 4 | 7 |
 |[jackson-core-2](#jackson-core-2)| 1 | 1 | 0 | 0 |
 |[jackson-databind-2](#jackson-databind-2)| 3 | 3 | 0 | 0 |
+|[javalin-2](#javalin-2)| 22 | 20 | 0 | 2 |
 |[junit-4](#junit-4)| 2 | 0 | 1 | 1 |
 |[junit-5](#junit-5)| 8 | 8 | 0 | 0 |
 |[micronaut-4](#micronaut-4)| 35 | 7 | 28 | 0 |
@@ -178,6 +179,33 @@ The following files have been resolved:
    com.fasterxml.jackson.core:jackson-databind:jar:2.16.1:compile -- module com.fasterxml.jackson.databind
    com.fasterxml.jackson.core:jackson-annotations:jar:2.16.1:compile -- module com.fasterxml.jackson.annotation
    com.fasterxml.jackson.core:jackson-core:jar:2.16.1:compile -- module com.fasterxml.jackson.core
+```
+
+## javalin-2
+```
+The following files have been resolved:
+   io.javalin:javalin:jar:6.0.1:compile -- module io.javalin
+   org.slf4j:slf4j-api:jar:2.0.10:compile -- module org.slf4j
+   org.eclipse.jetty:jetty-server:jar:11.0.19:compile -- module org.eclipse.jetty.server
+   org.eclipse.jetty.toolchain:jetty-jakarta-servlet-api:jar:5.0.2:compile -- module jetty.servlet.api
+   org.eclipse.jetty:jetty-http:jar:11.0.19:compile -- module org.eclipse.jetty.http
+   org.eclipse.jetty:jetty-util:jar:11.0.19:compile -- module org.eclipse.jetty.util
+   org.eclipse.jetty:jetty-io:jar:11.0.19:compile -- module org.eclipse.jetty.io
+   org.eclipse.jetty.websocket:websocket-jetty-server:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.jetty.server
+   org.eclipse.jetty.websocket:websocket-jetty-api:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.jetty.api
+   org.eclipse.jetty.websocket:websocket-jetty-common:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.jetty.common
+   org.eclipse.jetty.websocket:websocket-core-common:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.core.common
+   org.eclipse.jetty.websocket:websocket-servlet:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.servlet
+   org.eclipse.jetty.websocket:websocket-core-server:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.core.server
+   org.eclipse.jetty:jetty-servlet:jar:11.0.19:compile -- module org.eclipse.jetty.servlet
+   org.eclipse.jetty:jetty-security:jar:11.0.19:compile -- module org.eclipse.jetty.security
+   org.eclipse.jetty:jetty-webapp:jar:11.0.19:compile -- module org.eclipse.jetty.webapp
+   org.eclipse.jetty:jetty-xml:jar:11.0.19:compile -- module org.eclipse.jetty.xml
+   org.jetbrains.kotlin:kotlin-stdlib-jdk8:jar:1.9.10:compile -- module kotlin.stdlib.jdk8
+   org.jetbrains.kotlin:kotlin-stdlib:jar:1.9.10:compile -- module kotlin.stdlib
+   org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.9.10:compile -- module kotlin.stdlib.common (auto)
+   org.jetbrains:annotations:jar:13.0:compile -- module annotations (auto)
+   org.jetbrains.kotlin:kotlin-stdlib-jdk7:jar:1.9.10:compile -- module kotlin.stdlib.jdk7
 ```
 
 ## junit-4

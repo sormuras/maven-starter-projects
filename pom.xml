@@ -25,6 +25,7 @@
         <module>etc/helidon-se-4</module>
         <module>etc/jackson-core-2</module>
         <module>etc/jackson-databind-2</module>
+        <module>etc/javalin-2</module>
         <module>etc/junit-4</module>
         <module>etc/junit-5</module>
         <module>etc/micronaut-4</module>
