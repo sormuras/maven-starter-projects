@@ -1,7 +1,7 @@
 # Maven Starter Projects
 
 This repository curates a list of example projects with minimal direct dependencies.
-Each example project is stored as a Maven submodule in the [etc/](etc/) directory.
+Each example project is stored as a Maven submodule in the [etc/](etc) directory.
 The `pom.xml` file of an example project usually contains a single `<dependency>` element.
 All dependencies, including transitive dependencies, are then resolved by the standard [maven-dependency-plugin](https://maven.apache.org/plugins/maven-dependency-plugin/).
 The log line of each resolved dependency is parsed for modular markers and summarized in the table below.
