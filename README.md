@@ -15,7 +15,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 
 |Project| Dependencies | 🧩 | 🟢 | ⚪ |
 |-------|-------------:|----:|----:|----:|
-|[apache-commons-codec-1](#apache-commons-codec-1)| 1 | 0 | 1 | 0 |
+|[apache-commons-codec-1](#apache-commons-codec-1)| 1 | 1 | 0 | 0 |
 |[apache-commons-exec-1](#apache-commons-exec-1)| 1 | 1 | 0 | 0 |
 |[apache-commons-io-2](#apache-commons-io-2)| 1 | 1 | 0 | 0 |
 |[apache-commons-lang-3](#apache-commons-lang-3)| 1 | 1 | 0 | 0 |
@@ -24,8 +24,8 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[guava-33](#guava-33)| 7 | 0 | 4 | 3 |
 |[helidon-se-4](#helidon-se-4)| 61 | 50 | 4 | 7 |
 |[jackson-core-2](#jackson-core-2)| 1 | 1 | 0 | 0 |
-|[jackson-databind-2](#jackson-databind-2)| 3 | 3 | 0 | 0 |
-|[javalin-2](#javalin-2)| 22 | 20 | 0 | 2 |
+|[jackson-databind-2](#jackson-databind-2)| 4 | 4 | 0 | 0 |
+|[javalin-2](#javalin-2)| 21 | 20 | 0 | 1 |
 |[junit-4](#junit-4)| 2 | 0 | 1 | 1 |
 |[junit-5](#junit-5)| 8 | 8 | 0 | 0 |
 |[micronaut-4](#micronaut-4)| 35 | 7 | 28 | 0 |
@@ -56,7 +56,7 @@ java src/GenerateReadme.java > README.md
 ## apache-commons-codec-1
 ```
 The following files have been resolved:
-   commons-codec:commons-codec:jar:1.16.0:compile -- module org.apache.commons.codec [auto]
+   commons-codec:commons-codec:jar:1.16.1:compile -- module org.apache.commons.codec
 ```
 
 ## apache-commons-exec-1
@@ -170,42 +170,42 @@ The following files have been resolved:
 ## jackson-core-2
 ```
 The following files have been resolved:
-   com.fasterxml.jackson.core:jackson-core:jar:2.16.1:compile -- module com.fasterxml.jackson.core
+   com.fasterxml.jackson.core:jackson-core:jar:2.17.0:compile -- module com.fasterxml.jackson.core
 ```
 
 ## jackson-databind-2
 ```
 The following files have been resolved:
-   com.fasterxml.jackson.core:jackson-databind:jar:2.16.1:compile -- module com.fasterxml.jackson.databind
-   com.fasterxml.jackson.core:jackson-annotations:jar:2.16.1:compile -- module com.fasterxml.jackson.annotation
-   com.fasterxml.jackson.core:jackson-core:jar:2.16.1:compile -- module com.fasterxml.jackson.core
+   com.fasterxml.jackson.core:jackson-databind:jar:2.17.0:compile -- module com.fasterxml.jackson.databind
+   com.fasterxml.jackson.core:jackson-annotations:jar:2.17.0:compile -- module com.fasterxml.jackson.annotation
+   com.fasterxml.jackson.core:jackson-core:jar:2.17.0:compile -- module com.fasterxml.jackson.core
+   net.bytebuddy:byte-buddy:jar:1.14.9:compile -- module net.bytebuddy
 ```
 
 ## javalin-2
 ```
 The following files have been resolved:
-   io.javalin:javalin:jar:6.0.1:compile -- module io.javalin
-   org.slf4j:slf4j-api:jar:2.0.10:compile -- module org.slf4j
-   org.eclipse.jetty:jetty-server:jar:11.0.19:compile -- module org.eclipse.jetty.server
+   io.javalin:javalin:jar:6.1.3:compile -- module io.javalin
+   org.slf4j:slf4j-api:jar:2.0.12:compile -- module org.slf4j
+   org.eclipse.jetty:jetty-server:jar:11.0.20:compile -- module org.eclipse.jetty.server
+   org.eclipse.jetty:jetty-http:jar:11.0.20:compile -- module org.eclipse.jetty.http
+   org.eclipse.jetty:jetty-util:jar:11.0.20:compile -- module org.eclipse.jetty.util
+   org.eclipse.jetty:jetty-io:jar:11.0.20:compile -- module org.eclipse.jetty.io
    org.eclipse.jetty.toolchain:jetty-jakarta-servlet-api:jar:5.0.2:compile -- module jetty.servlet.api
-   org.eclipse.jetty:jetty-http:jar:11.0.19:compile -- module org.eclipse.jetty.http
-   org.eclipse.jetty:jetty-util:jar:11.0.19:compile -- module org.eclipse.jetty.util
-   org.eclipse.jetty:jetty-io:jar:11.0.19:compile -- module org.eclipse.jetty.io
-   org.eclipse.jetty.websocket:websocket-jetty-server:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.jetty.server
-   org.eclipse.jetty.websocket:websocket-jetty-api:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.jetty.api
-   org.eclipse.jetty.websocket:websocket-jetty-common:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.jetty.common
-   org.eclipse.jetty.websocket:websocket-core-common:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.core.common
-   org.eclipse.jetty.websocket:websocket-servlet:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.servlet
-   org.eclipse.jetty.websocket:websocket-core-server:jar:11.0.19:compile -- module org.eclipse.jetty.websocket.core.server
-   org.eclipse.jetty:jetty-servlet:jar:11.0.19:compile -- module org.eclipse.jetty.servlet
-   org.eclipse.jetty:jetty-security:jar:11.0.19:compile -- module org.eclipse.jetty.security
-   org.eclipse.jetty:jetty-webapp:jar:11.0.19:compile -- module org.eclipse.jetty.webapp
-   org.eclipse.jetty:jetty-xml:jar:11.0.19:compile -- module org.eclipse.jetty.xml
-   org.jetbrains.kotlin:kotlin-stdlib-jdk8:jar:1.9.10:compile -- module kotlin.stdlib.jdk8
-   org.jetbrains.kotlin:kotlin-stdlib:jar:1.9.10:compile -- module kotlin.stdlib
-   org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.9.10:compile -- module kotlin.stdlib.common (auto)
+   org.eclipse.jetty.websocket:websocket-jetty-server:jar:11.0.20:compile -- module org.eclipse.jetty.websocket.jetty.server
+   org.eclipse.jetty:jetty-servlet:jar:11.0.20:compile -- module org.eclipse.jetty.servlet
+   org.eclipse.jetty:jetty-security:jar:11.0.20:compile -- module org.eclipse.jetty.security
+   org.eclipse.jetty:jetty-webapp:jar:11.0.20:compile -- module org.eclipse.jetty.webapp
+   org.eclipse.jetty:jetty-xml:jar:11.0.20:compile -- module org.eclipse.jetty.xml
+   org.eclipse.jetty.websocket:websocket-jetty-api:jar:11.0.20:compile -- module org.eclipse.jetty.websocket.jetty.api
+   org.eclipse.jetty.websocket:websocket-jetty-common:jar:11.0.20:compile -- module org.eclipse.jetty.websocket.jetty.common
+   org.eclipse.jetty.websocket:websocket-core-common:jar:11.0.20:compile -- module org.eclipse.jetty.websocket.core.common
+   org.eclipse.jetty.websocket:websocket-servlet:jar:11.0.20:compile -- module org.eclipse.jetty.websocket.servlet
+   org.eclipse.jetty.websocket:websocket-core-server:jar:11.0.20:compile -- module org.eclipse.jetty.websocket.core.server
+   org.jetbrains.kotlin:kotlin-stdlib-jdk8:jar:1.9.22:compile -- module kotlin.stdlib.jdk8
+   org.jetbrains.kotlin:kotlin-stdlib:jar:1.9.22:compile -- module kotlin.stdlib
    org.jetbrains:annotations:jar:13.0:compile -- module annotations (auto)
-   org.jetbrains.kotlin:kotlin-stdlib-jdk7:jar:1.9.10:compile -- module kotlin.stdlib.jdk7
+   org.jetbrains.kotlin:kotlin-stdlib-jdk7:jar:1.9.22:compile -- module kotlin.stdlib.jdk7
 ```
 
 ## junit-4
@@ -277,22 +277,22 @@ The following files have been resolved:
 ## quarkus-3
 ```
 The following files have been resolved:
-   io.quarkus:quarkus-arc:jar:3.7.2:compile -- module quarkus.arc (auto)
-   io.quarkus.arc:arc:jar:3.7.2:compile -- module arc (auto)
+   io.quarkus:quarkus-arc:jar:3.8.2:compile -- module quarkus.arc (auto)
+   io.quarkus.arc:arc:jar:3.8.2:compile -- module arc (auto)
    jakarta.enterprise:jakarta.enterprise.cdi-api:jar:4.0.1:compile -- module jakarta.cdi
    jakarta.enterprise:jakarta.enterprise.lang-model:jar:4.0.1:compile -- module jakarta.cdi.lang.model
    jakarta.el:jakarta.el-api:jar:5.0.1:compile -- module jakarta.el
    jakarta.interceptor:jakarta.interceptor-api:jar:2.1.0:compile -- module jakarta.interceptor
    jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile -- module jakarta.annotation
    jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile -- module jakarta.transaction
-   io.smallrye.reactive:mutiny:jar:2.5.6:compile -- module io.smallrye.mutiny
+   io.smallrye.reactive:mutiny:jar:2.5.7:compile -- module io.smallrye.mutiny
    io.smallrye.common:smallrye-common-annotation:jar:2.1.2:compile -- module io.smallrye.common.annotation
    org.jboss.logging:jboss-logging:jar:3.5.3.Final:compile -- module org.jboss.logging
-   io.quarkus:quarkus-core:jar:3.7.2:compile -- module quarkus.core (auto)
+   io.quarkus:quarkus-core:jar:3.8.2:compile -- module quarkus.core (auto)
    jakarta.inject:jakarta.inject-api:jar:2.0.1:compile -- module jakarta.inject
    io.smallrye.common:smallrye-common-os:jar:2.1.2:compile -- module io.smallrye.common.os
-   io.quarkus:quarkus-ide-launcher:jar:3.7.2:compile -- module quarkus.ide.launcher (auto)
-   io.quarkus:quarkus-development-mode-spi:jar:3.7.2:compile -- module quarkus.development.mode.spi (auto)
+   io.quarkus:quarkus-ide-launcher:jar:3.8.2:compile -- module quarkus.ide.launcher (auto)
+   io.quarkus:quarkus-development-mode-spi:jar:3.8.2:compile -- module quarkus.development.mode.spi (auto)
    io.smallrye.config:smallrye-config:jar:3.5.4:compile -- module smallrye.config (auto)
    io.smallrye.config:smallrye-config-core:jar:3.5.4:compile -- module smallrye.config.core (auto)
    org.eclipse.microprofile.config:microprofile-config-api:jar:3.0.3:compile -- module microprofile.config.api (auto)
@@ -312,7 +312,7 @@ The following files have been resolved:
    org.slf4j:slf4j-api:jar:2.0.6:compile -- module org.slf4j
    org.jboss.slf4j:slf4j-jboss-logmanager:jar:2.0.0.Final:compile -- module slf4j.jboss.logmanager (auto)
    org.wildfly.common:wildfly-common:jar:1.7.0.Final:compile -- module wildfly.common (auto)
-   io.quarkus:quarkus-bootstrap-runner:jar:3.7.2:compile -- module quarkus.bootstrap.runner (auto)
+   io.quarkus:quarkus-bootstrap-runner:jar:3.8.2:compile -- module quarkus.bootstrap.runner (auto)
    io.smallrye.common:smallrye-common-io:jar:2.1.2:compile -- module io.smallrye.common.io
    io.github.crac:org-crac:jar:0.1.3:compile -- module org.crac (auto)
    io.quarkus:quarkus-fs-util:jar:0.0.10:compile -- module quarkus.fs.util (auto)
@@ -322,7 +322,7 @@ The following files have been resolved:
 ## slf4j-2
 ```
 The following files have been resolved:
-   org.slf4j:slf4j-api:jar:2.0.12:compile -- module org.slf4j
+   org.slf4j:slf4j-api:jar:2.1.0-alpha1:compile -- module org.slf4j
 ```
 
 ## snakeyaml-2
