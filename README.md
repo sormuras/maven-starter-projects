@@ -21,7 +21,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[apache-commons-lang-3](#apache-commons-lang-3)| 1 | 1 | 0 | 0 |
 |[asm-9](#asm-9)| 1 | 1 | 0 | 0 |
 |[gson-2](#gson-2)| 1 | 1 | 0 | 0 |
-|[guava-33](#guava-33)| 7 | 0 | 4 | 3 |
+|[guava-33](#guava-33)| 7 | 2 | 3 | 2 |
 |[helidon-se-4](#helidon-se-4)| 61 | 50 | 4 | 7 |
 |[jackson-core-2](#jackson-core-2)| 1 | 1 | 0 | 0 |
 |[jackson-databind-2](#jackson-databind-2)| 4 | 4 | 0 | 0 |
@@ -30,7 +30,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[junit-5](#junit-5)| 8 | 8 | 0 | 0 |
 |[micronaut-4](#micronaut-4)| 35 | 7 | 28 | 0 |
 |[picocli-4](#picocli-4)| 1 | 1 | 0 | 0 |
-|[quarkus-3](#quarkus-3)| 40 | 23 | 0 | 17 |
+|[quarkus-3](#quarkus-3)| 41 | 24 | 0 | 17 |
 |[slf4j-2](#slf4j-2)| 1 | 1 | 0 | 0 |
 |[snakeyaml-2](#snakeyaml-2)| 1 | 1 | 0 | 0 |
 |[spring-boot-3](#spring-boot-3)| 34 | 17 | 17 | 0 |
@@ -56,7 +56,7 @@ java src/GenerateReadme.java > README.md
 ## apache-commons-codec-1
 ```
 The following files have been resolved:
-   commons-codec:commons-codec:jar:1.16.1:compile -- module org.apache.commons.codec
+   commons-codec:commons-codec:jar:1.17.0:compile -- module org.apache.commons.codec
 ```
 
 ## apache-commons-exec-1
@@ -68,7 +68,7 @@ The following files have been resolved:
 ## apache-commons-io-2
 ```
 The following files have been resolved:
-   commons-io:commons-io:jar:2.15.1:compile -- module org.apache.commons.io
+   commons-io:commons-io:jar:2.16.1:compile -- module org.apache.commons.io
 ```
 
 ## apache-commons-lang-3
@@ -80,7 +80,7 @@ The following files have been resolved:
 ## asm-9
 ```
 The following files have been resolved:
-   org.ow2.asm:asm:jar:9.6:compile -- module org.objectweb.asm
+   org.ow2.asm:asm:jar:9.7:compile -- module org.objectweb.asm
 ```
 
 ## gson-2
@@ -92,13 +92,13 @@ The following files have been resolved:
 ## guava-33
 ```
 The following files have been resolved:
-   com.google.guava:guava:jar:33.0.0-jre:compile -- module com.google.common [auto]
+   com.google.guava:guava:jar:33.1.0-jre:compile -- module com.google.common [auto]
    com.google.guava:failureaccess:jar:1.0.2:compile -- module com.google.common.util.concurrent.internal [auto]
    com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile -- module listenablefuture (auto)
    com.google.code.findbugs:jsr305:jar:3.0.2:compile -- module jsr305 (auto)
-   org.checkerframework:checker-qual:jar:3.41.0:compile -- module org.checkerframework.checker.qual [auto]
-   com.google.errorprone:error_prone_annotations:jar:2.23.0:compile -- module com.google.errorprone.annotations [auto]
-   com.google.j2objc:j2objc-annotations:jar:2.8:compile -- module j2objc.annotations (auto)
+   org.checkerframework:checker-qual:jar:3.42.0:compile -- module org.checkerframework.checker.qual [auto]
+   com.google.errorprone:error_prone_annotations:jar:2.26.1:compile -- module com.google.errorprone.annotations
+   com.google.j2objc:j2objc-annotations:jar:3.0.0:compile -- module com.google.j2objc.annotations
 ```
 
 ## helidon-se-4
@@ -218,14 +218,14 @@ The following files have been resolved:
 ## junit-5
 ```
 The following files have been resolved:
-   org.junit.jupiter:junit-jupiter:jar:5.10.2:compile -- module org.junit.jupiter
-   org.junit.jupiter:junit-jupiter-api:jar:5.10.2:compile -- module org.junit.jupiter.api
+   org.junit.jupiter:junit-jupiter:jar:5.11.0-M1:compile -- module org.junit.jupiter
+   org.junit.jupiter:junit-jupiter-api:jar:5.11.0-M1:compile -- module org.junit.jupiter.api
    org.opentest4j:opentest4j:jar:1.3.0:compile -- module org.opentest4j
-   org.junit.platform:junit-platform-commons:jar:1.10.2:compile -- module org.junit.platform.commons
+   org.junit.platform:junit-platform-commons:jar:1.11.0-M1:compile -- module org.junit.platform.commons
    org.apiguardian:apiguardian-api:jar:1.1.2:compile -- module org.apiguardian.api
-   org.junit.jupiter:junit-jupiter-params:jar:5.10.2:compile -- module org.junit.jupiter.params
-   org.junit.jupiter:junit-jupiter-engine:jar:5.10.2:runtime -- module org.junit.jupiter.engine
-   org.junit.platform:junit-platform-engine:jar:1.10.2:runtime -- module org.junit.platform.engine
+   org.junit.jupiter:junit-jupiter-params:jar:5.11.0-M1:compile -- module org.junit.jupiter.params
+   org.junit.jupiter:junit-jupiter-engine:jar:5.11.0-M1:runtime -- module org.junit.jupiter.engine
+   org.junit.platform:junit-platform-engine:jar:1.11.0-M1:runtime -- module org.junit.platform.engine
 ```
 
 ## micronaut-4
@@ -277,43 +277,44 @@ The following files have been resolved:
 ## quarkus-3
 ```
 The following files have been resolved:
-   io.quarkus:quarkus-arc:jar:3.8.2:compile -- module quarkus.arc (auto)
-   io.quarkus.arc:arc:jar:3.8.2:compile -- module arc (auto)
+   io.quarkus:quarkus-arc:jar:3.10.0.CR1:compile -- module quarkus.arc (auto)
+   io.quarkus.arc:arc:jar:3.10.0.CR1:compile -- module arc (auto)
    jakarta.enterprise:jakarta.enterprise.cdi-api:jar:4.0.1:compile -- module jakarta.cdi
    jakarta.enterprise:jakarta.enterprise.lang-model:jar:4.0.1:compile -- module jakarta.cdi.lang.model
    jakarta.el:jakarta.el-api:jar:5.0.1:compile -- module jakarta.el
    jakarta.interceptor:jakarta.interceptor-api:jar:2.1.0:compile -- module jakarta.interceptor
    jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile -- module jakarta.annotation
    jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile -- module jakarta.transaction
-   io.smallrye.reactive:mutiny:jar:2.5.7:compile -- module io.smallrye.mutiny
-   io.smallrye.common:smallrye-common-annotation:jar:2.1.2:compile -- module io.smallrye.common.annotation
+   io.smallrye.reactive:mutiny:jar:2.6.0:compile -- module io.smallrye.mutiny
+   io.smallrye.common:smallrye-common-annotation:jar:2.3.0:compile -- module io.smallrye.common.annotation
+   org.jctools:jctools-core:jar:4.0.3:compile -- module org.jctools.core
    org.jboss.logging:jboss-logging:jar:3.5.3.Final:compile -- module org.jboss.logging
-   io.quarkus:quarkus-core:jar:3.8.2:compile -- module quarkus.core (auto)
+   io.quarkus:quarkus-core:jar:3.10.0.CR1:compile -- module quarkus.core (auto)
    jakarta.inject:jakarta.inject-api:jar:2.0.1:compile -- module jakarta.inject
-   io.smallrye.common:smallrye-common-os:jar:2.1.2:compile -- module io.smallrye.common.os
-   io.quarkus:quarkus-ide-launcher:jar:3.8.2:compile -- module quarkus.ide.launcher (auto)
-   io.quarkus:quarkus-development-mode-spi:jar:3.8.2:compile -- module quarkus.development.mode.spi (auto)
-   io.smallrye.config:smallrye-config:jar:3.5.4:compile -- module smallrye.config (auto)
-   io.smallrye.config:smallrye-config-core:jar:3.5.4:compile -- module smallrye.config.core (auto)
+   io.smallrye.common:smallrye-common-os:jar:2.3.0:compile -- module io.smallrye.common.os
+   io.quarkus:quarkus-ide-launcher:jar:3.10.0.CR1:compile -- module quarkus.ide.launcher (auto)
+   io.quarkus:quarkus-development-mode-spi:jar:3.10.0.CR1:compile -- module quarkus.development.mode.spi (auto)
+   io.smallrye.config:smallrye-config:jar:3.7.1:compile -- module smallrye.config (auto)
+   io.smallrye.config:smallrye-config-core:jar:3.7.1:compile -- module smallrye.config.core (auto)
    org.eclipse.microprofile.config:microprofile-config-api:jar:3.0.3:compile -- module microprofile.config.api (auto)
-   io.smallrye.common:smallrye-common-classloader:jar:2.1.2:compile -- module io.smallrye.common.classloader
-   io.smallrye.config:smallrye-config-common:jar:3.5.4:compile -- module smallrye.config.common (auto)
+   io.smallrye.common:smallrye-common-classloader:jar:2.3.0:compile -- module io.smallrye.common.classloader
+   io.smallrye.config:smallrye-config-common:jar:3.7.1:compile -- module smallrye.config.common (auto)
    org.jboss.logmanager:jboss-logmanager:jar:3.0.4.Final:compile -- module org.jboss.logmanager
-   io.smallrye.common:smallrye-common-constraint:jar:2.1.2:compile -- module io.smallrye.common.constraint
-   io.smallrye.common:smallrye-common-cpu:jar:2.1.2:compile -- module io.smallrye.common.cpu
-   io.smallrye.common:smallrye-common-expression:jar:2.1.2:compile -- module io.smallrye.common.expression
-   io.smallrye.common:smallrye-common-function:jar:2.1.2:compile -- module io.smallrye.common.function
-   io.smallrye.common:smallrye-common-net:jar:2.1.2:compile -- module io.smallrye.common.net
-   io.smallrye.common:smallrye-common-ref:jar:2.1.2:compile -- module io.smallrye.common.ref
+   io.smallrye.common:smallrye-common-constraint:jar:2.3.0:compile -- module io.smallrye.common.constraint
+   io.smallrye.common:smallrye-common-cpu:jar:2.3.0:compile -- module io.smallrye.common.cpu
+   io.smallrye.common:smallrye-common-expression:jar:2.3.0:compile -- module io.smallrye.common.expression
+   io.smallrye.common:smallrye-common-function:jar:2.3.0:compile -- module io.smallrye.common.function
+   io.smallrye.common:smallrye-common-net:jar:2.3.0:compile -- module io.smallrye.common.net
+   io.smallrye.common:smallrye-common-ref:jar:2.3.0:compile -- module io.smallrye.common.ref
    jakarta.json:jakarta.json-api:jar:2.1.3:compile -- module jakarta.json
    org.eclipse.parsson:parsson:jar:1.1.5:compile -- module org.eclipse.parsson
    org.jboss.logging:jboss-logging-annotations:jar:2.2.1.Final:compile -- module jboss.logging.annotations (auto)
-   org.jboss.threads:jboss-threads:jar:3.5.1.Final:compile -- module jboss.threads (auto)
+   org.jboss.threads:jboss-threads:jar:3.6.1.Final:compile -- module jboss.threads (auto)
    org.slf4j:slf4j-api:jar:2.0.6:compile -- module org.slf4j
    org.jboss.slf4j:slf4j-jboss-logmanager:jar:2.0.0.Final:compile -- module slf4j.jboss.logmanager (auto)
    org.wildfly.common:wildfly-common:jar:1.7.0.Final:compile -- module wildfly.common (auto)
-   io.quarkus:quarkus-bootstrap-runner:jar:3.8.2:compile -- module quarkus.bootstrap.runner (auto)
-   io.smallrye.common:smallrye-common-io:jar:2.1.2:compile -- module io.smallrye.common.io
+   io.quarkus:quarkus-bootstrap-runner:jar:3.10.0.CR1:compile -- module quarkus.bootstrap.runner (auto)
+   io.smallrye.common:smallrye-common-io:jar:2.3.0:compile -- module io.smallrye.common.io
    io.github.crac:org-crac:jar:0.1.3:compile -- module org.crac (auto)
    io.quarkus:quarkus-fs-util:jar:0.0.10:compile -- module quarkus.fs.util (auto)
    org.eclipse.microprofile.context-propagation:microprofile-context-propagation-api:jar:1.3:compile -- module microprofile.context.propagation.api (auto)
