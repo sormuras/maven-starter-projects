@@ -28,6 +28,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[javalin-2](#javalin-2)| 21 | 20 | 0 | 1 |
 |[junit-4](#junit-4)| 2 | 0 | 1 | 1 |
 |[junit-5](#junit-5)| 8 | 8 | 0 | 0 |
+|[junit-framework](#junit-framework)| 11 | 11 | 0 | 0 |
 |[micronaut-4](#micronaut-4)| 35 | 7 | 28 | 0 |
 |[picocli-4](#picocli-4)| 1 | 1 | 0 | 0 |
 |[quarkus-3](#quarkus-3)| 41 | 24 | 0 | 17 |
@@ -218,14 +219,30 @@ The following files have been resolved:
 ## junit-5
 ```
 The following files have been resolved:
-   org.junit.jupiter:junit-jupiter:jar:5.11.0-M1:compile -- module org.junit.jupiter
-   org.junit.jupiter:junit-jupiter-api:jar:5.11.0-M1:compile -- module org.junit.jupiter.api
+   org.junit.jupiter:junit-jupiter:jar:5.13.2:compile -- module org.junit.jupiter
+   org.junit.jupiter:junit-jupiter-api:jar:5.13.2:compile -- module org.junit.jupiter.api
    org.opentest4j:opentest4j:jar:1.3.0:compile -- module org.opentest4j
-   org.junit.platform:junit-platform-commons:jar:1.11.0-M1:compile -- module org.junit.platform.commons
+   org.junit.platform:junit-platform-commons:jar:1.13.2:compile -- module org.junit.platform.commons
    org.apiguardian:apiguardian-api:jar:1.1.2:compile -- module org.apiguardian.api
-   org.junit.jupiter:junit-jupiter-params:jar:5.11.0-M1:compile -- module org.junit.jupiter.params
-   org.junit.jupiter:junit-jupiter-engine:jar:5.11.0-M1:runtime -- module org.junit.jupiter.engine
-   org.junit.platform:junit-platform-engine:jar:1.11.0-M1:runtime -- module org.junit.platform.engine
+   org.junit.jupiter:junit-jupiter-params:jar:5.13.2:compile -- module org.junit.jupiter.params
+   org.junit.jupiter:junit-jupiter-engine:jar:5.13.2:runtime -- module org.junit.jupiter.engine
+   org.junit.platform:junit-platform-engine:jar:1.13.2:runtime -- module org.junit.platform.engine
+```
+
+## junit-framework
+```
+The following files have been resolved:
+   org.apiguardian:apiguardian-api:jar:1.1.2:compile -- module org.apiguardian.api
+   org.junit.jupiter:junit-jupiter:jar:5.13.2:compile -- module org.junit.jupiter
+   org.junit.jupiter:junit-jupiter-api:jar:5.13.2:compile -- module org.junit.jupiter.api
+   org.junit.jupiter:junit-jupiter-engine:jar:5.13.2:runtime -- module org.junit.jupiter.engine
+   org.junit.jupiter:junit-jupiter-params:jar:5.13.2:compile -- module org.junit.jupiter.params
+   org.junit.platform:junit-platform-commons:jar:1.13.2:compile -- module org.junit.platform.commons
+   org.junit.platform:junit-platform-launcher:jar:1.13.2:compile -- module org.junit.platform.launcher
+   org.junit.platform:junit-platform-engine:jar:1.13.2:compile -- module org.junit.platform.engine
+   org.junit.platform:junit-platform-reporting:jar:1.13.2:compile -- module org.junit.platform.reporting
+   org.opentest4j:opentest4j:jar:1.3.0:compile -- module org.opentest4j
+   org.opentest4j.reporting:open-test-reporting-tooling-spi:jar:0.2.3:runtime -- module org.opentest4j.reporting.tooling.spi
 ```
 
 ## micronaut-4
