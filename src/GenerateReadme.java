@@ -2,6 +2,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
+import java.util.StringJoiner;
 
 class GenerateReadme {
   public static void main(String... args) throws Exception {
@@ -23,38 +25,47 @@ class GenerateReadme {
         An `<Name> | n | n | 0 | 0` row indicates a 100% modularized project:
         its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipafx.dev/java-modules-jpms-maturity-model/).
         """);
-    var directories = new ArrayList<Path>();
-    try (var stream =
-        Files.newDirectoryStream(Path.of("etc"), GenerateReadme::isProjectDirectory)) {
-      stream.forEach(directories::add);
+    record Project(
+        Path directory, List<String> modules, List<String> manifested, List<String> filename) {
+      static Project of(Path directory) throws Exception {
+        var resolved = directory.resolve("resolved.txt");
+        var lines = Files.readAllLines(resolved);
+        var modules = lines.stream().filter(line -> line.contains(" module ")).toList();
+        var manifested = modules.stream().filter(line -> line.endsWith(" [auto]")).toList();
+        var filename = modules.stream().filter(line -> line.endsWith(" (auto)")).toList();
+        return new Project(directory, modules, manifested, filename);
+      }
+
+      static boolean isProjectDirectory(Path path) {
+        return Files.isDirectory(path) && Files.isRegularFile(path.resolve("pom.xml"));
+      }
+
+      String toSummaryString() {
+        var joiner = new StringJoiner(" | ");
+        joiner.add(String.valueOf(modules.size()));
+        joiner.add(String.valueOf(modules.size() - manifested.size() - filename.size()));
+        joiner.add(String.valueOf(manifested.size()));
+        joiner.add(String.valueOf(filename.size()));
+        return joiner.toString();
+      }
     }
-    directories.sort(Comparator.comparing(Path::toString));
+    var projects = new ArrayList<Project>();
+    try (var stream = Files.newDirectoryStream(Path.of("etc"), Project::isProjectDirectory)) {
+      for (var directory : stream) projects.add(Project.of(directory));
+    }
+    projects.sort(Comparator.comparing(Project::toString));
 
     // project summary table
     System.out.println("|Project| Dependencies | 🧩 | 🟢 | ⚪ |");
     System.out.println("|-------|-------------:|----:|----:|----:|");
-    for (var directory : directories) {
+    for (var project : projects) {
+      var directory = project.directory();
       System.out.print("|[");
       System.out.print(directory.getFileName());
       System.out.print("](#");
       System.out.print(directory.getFileName());
       System.out.print(")| ");
-      var resolved = directory.resolve("resolved.txt");
-      if (Files.isRegularFile(resolved)) {
-        var lines = Files.readAllLines(resolved);
-        var modules = lines.stream().filter(line -> line.contains(" module ")).toList();
-        var manifested = modules.stream().filter(line -> line.endsWith(" [auto]")).toList();
-        var filename = modules.stream().filter(line -> line.endsWith(" (auto)")).toList();
-        System.out.print(modules.size());
-        System.out.print(" | ");
-        System.out.print(modules.size() - manifested.size() - filename.size());
-        System.out.print(" | ");
-        System.out.print(manifested.size());
-        System.out.print(" | ");
-        System.out.print(filename.size());
-      } else {
-        System.out.print(" ? | ? | ? ");
-      }
+      System.out.print(project.toSummaryString());
       System.out.println(" |");
     }
 
@@ -80,23 +91,16 @@ class GenerateReadme {
         """);
 
     // project details
-    for (var directory : directories) {
+    for (var project : projects) {
+      var directory = project.directory();
       System.out.println();
       System.out.println("## " + directory.getFileName());
-      var resolved = directory.resolve("resolved.txt");
-      if (Files.isRegularFile(resolved)) {
-        System.out.println("```");
-        Files.readAllLines(resolved).stream()
-            .filter(line -> !line.isBlank())
-            .forEach(System.out::println);
-        System.out.println("```");
-      } else {
-        System.out.printf("_No such file: %s_%n", resolved);
-      }
+        System.out.println("| Dependencies | 🧩 | 🟢 | ⚪ |");
+        System.out.println("|-------------:|----:|----:|----:|");
+      System.out.println("| " + project.toSummaryString() + " |");
+      System.out.println("```");
+      project.modules().stream().sorted().forEach(System.out::println);
+      System.out.println("```");
     }
-  }
-
-  static boolean isProjectDirectory(Path path) {
-    return Files.isDirectory(path) && Files.isRegularFile(path.resolve("pom.xml"));
   }
 }
