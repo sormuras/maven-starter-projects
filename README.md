@@ -28,10 +28,11 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[javalin-2](#javalin-2)| 21 | 20 | 0 | 1 |
 |[junit-4](#junit-4)| 2 | 0 | 1 | 1 |
 |[junit-5](#junit-5)| 8 | 8 | 0 | 0 |
+|[junit-6](#junit-6)| 9 | 9 | 0 | 0 |
 |[junit-framework](#junit-framework)| 16 | 16 | 0 | 0 |
 |[micronaut-4](#micronaut-4)| 36 | 17 | 19 | 0 |
 |[picocli-4](#picocli-4)| 1 | 1 | 0 | 0 |
-|[quarkus-3](#quarkus-3)| 37 | 25 | 0 | 12 |
+|[quarkus-3](#quarkus-3)| 41 | 26 | 0 | 15 |
 |[slf4j-2](#slf4j-2)| 1 | 1 | 0 | 0 |
 |[snakeyaml-2](#snakeyaml-2)| 1 | 1 | 0 | 0 |
 |[spring-boot-3](#spring-boot-3)| 34 | 17 | 17 | 0 |
@@ -67,7 +68,7 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 1 | 1 | 0 | 0 |
 ```
-   org.apache.commons:commons-exec:jar:1.4.0:compile -- module org.apache.commons.exec
+   org.apache.commons:commons-exec:jar:1.5.0:compile -- module org.apache.commons.exec
 ```
 
 ## apache-commons-io-2
@@ -256,12 +257,28 @@ java src/GenerateReadme.java > README.md
 | 8 | 8 | 0 | 0 |
 ```
    org.apiguardian:apiguardian-api:jar:1.1.2:compile -- module org.apiguardian.api
-   org.junit.jupiter:junit-jupiter-api:jar:5.13.2:compile -- module org.junit.jupiter.api
-   org.junit.jupiter:junit-jupiter-engine:jar:5.13.2:runtime -- module org.junit.jupiter.engine
-   org.junit.jupiter:junit-jupiter-params:jar:5.13.2:compile -- module org.junit.jupiter.params
-   org.junit.jupiter:junit-jupiter:jar:5.13.2:compile -- module org.junit.jupiter
-   org.junit.platform:junit-platform-commons:jar:1.13.2:compile -- module org.junit.platform.commons
-   org.junit.platform:junit-platform-engine:jar:1.13.2:runtime -- module org.junit.platform.engine
+   org.junit.jupiter:junit-jupiter-api:jar:5.13.3:compile -- module org.junit.jupiter.api
+   org.junit.jupiter:junit-jupiter-engine:jar:5.13.3:runtime -- module org.junit.jupiter.engine
+   org.junit.jupiter:junit-jupiter-params:jar:5.13.3:compile -- module org.junit.jupiter.params
+   org.junit.jupiter:junit-jupiter:jar:5.13.3:compile -- module org.junit.jupiter
+   org.junit.platform:junit-platform-commons:jar:1.13.3:compile -- module org.junit.platform.commons
+   org.junit.platform:junit-platform-engine:jar:1.13.3:runtime -- module org.junit.platform.engine
+   org.opentest4j:opentest4j:jar:1.3.0:compile -- module org.opentest4j
+```
+
+## junit-6
+| Dependencies | 🧩 | 🟢 | ⚪ |
+|-------------:|----:|----:|----:|
+| 9 | 9 | 0 | 0 |
+```
+   org.apiguardian:apiguardian-api:jar:1.1.2:compile -- module org.apiguardian.api
+   org.jspecify:jspecify:jar:1.0.0:compile -- module org.jspecify
+   org.junit.jupiter:junit-jupiter-api:jar:6.0.0-M1:compile -- module org.junit.jupiter.api
+   org.junit.jupiter:junit-jupiter-engine:jar:6.0.0-M1:runtime -- module org.junit.jupiter.engine
+   org.junit.jupiter:junit-jupiter-params:jar:6.0.0-M1:compile -- module org.junit.jupiter.params
+   org.junit.jupiter:junit-jupiter:jar:6.0.0-M1:compile -- module org.junit.jupiter
+   org.junit.platform:junit-platform-commons:jar:6.0.0-M1:compile -- module org.junit.platform.commons
+   org.junit.platform:junit-platform-engine:jar:6.0.0-M1:runtime -- module org.junit.platform.engine
    org.opentest4j:opentest4j:jar:1.3.0:compile -- module org.opentest4j
 ```
 
@@ -300,20 +317,20 @@ java src/GenerateReadme.java > README.md
    io.micronaut.serde:micronaut-serde-api:jar:2.15.0:compile -- module io.micronaut.serde.micronaut_serde_api [auto]
    io.micronaut.serde:micronaut-serde-jackson:jar:2.15.0:compile -- module io.micronaut.serde.micronaut_serde_jackson [auto]
    io.micronaut.serde:micronaut-serde-support:jar:2.15.0:runtime -- module io.micronaut.serde.micronaut_serde_support [auto]
-   io.micronaut:micronaut-aop:jar:4.9.5:compile -- module io.micronaut.micronaut_aop [auto]
-   io.micronaut:micronaut-buffer-netty:jar:4.9.5:compile -- module io.micronaut.micronaut_buffer_netty [auto]
-   io.micronaut:micronaut-context-propagation:jar:4.9.5:compile -- module io.micronaut.micronaut_context_propagation [auto]
-   io.micronaut:micronaut-context:jar:4.9.5:compile -- module io.micronaut.micronaut_context [auto]
-   io.micronaut:micronaut-core-reactive:jar:4.9.5:compile -- module io.micronaut.micronaut_core_reactive [auto]
-   io.micronaut:micronaut-core:jar:4.9.5:compile -- module io.micronaut.micronaut_core [auto]
-   io.micronaut:micronaut-http-netty:jar:4.9.5:compile -- module io.micronaut.micronaut_http_netty [auto]
-   io.micronaut:micronaut-http-server-netty:jar:4.9.5:compile -- module io.micronaut.micronaut_http_server_netty [auto]
-   io.micronaut:micronaut-http-server:jar:4.9.5:compile -- module io.micronaut.micronaut_http_server [auto]
-   io.micronaut:micronaut-http:jar:4.9.5:compile -- module io.micronaut.micronaut_http [auto]
-   io.micronaut:micronaut-inject:jar:4.9.5:compile -- module io.micronaut.micronaut_inject [auto]
-   io.micronaut:micronaut-jackson-core:jar:4.9.5:compile -- module io.micronaut.micronaut_jackson_core [auto]
-   io.micronaut:micronaut-json-core:jar:4.9.5:compile -- module io.micronaut.micronaut_json_core [auto]
-   io.micronaut:micronaut-router:jar:4.9.5:compile -- module io.micronaut.micronaut_router [auto]
+   io.micronaut:micronaut-aop:jar:4.9.7:compile -- module io.micronaut.micronaut_aop [auto]
+   io.micronaut:micronaut-buffer-netty:jar:4.9.7:compile -- module io.micronaut.micronaut_buffer_netty [auto]
+   io.micronaut:micronaut-context-propagation:jar:4.9.7:compile -- module io.micronaut.micronaut_context_propagation [auto]
+   io.micronaut:micronaut-context:jar:4.9.7:compile -- module io.micronaut.micronaut_context [auto]
+   io.micronaut:micronaut-core-reactive:jar:4.9.7:compile -- module io.micronaut.micronaut_core_reactive [auto]
+   io.micronaut:micronaut-core:jar:4.9.7:compile -- module io.micronaut.micronaut_core [auto]
+   io.micronaut:micronaut-http-netty:jar:4.9.7:compile -- module io.micronaut.micronaut_http_netty [auto]
+   io.micronaut:micronaut-http-server-netty:jar:4.9.7:compile -- module io.micronaut.micronaut_http_server_netty [auto]
+   io.micronaut:micronaut-http-server:jar:4.9.7:compile -- module io.micronaut.micronaut_http_server [auto]
+   io.micronaut:micronaut-http:jar:4.9.7:compile -- module io.micronaut.micronaut_http [auto]
+   io.micronaut:micronaut-inject:jar:4.9.7:compile -- module io.micronaut.micronaut_inject [auto]
+   io.micronaut:micronaut-jackson-core:jar:4.9.7:compile -- module io.micronaut.micronaut_jackson_core [auto]
+   io.micronaut:micronaut-json-core:jar:4.9.7:compile -- module io.micronaut.micronaut_json_core [auto]
+   io.micronaut:micronaut-router:jar:4.9.7:compile -- module io.micronaut.micronaut_router [auto]
    io.netty:netty-buffer:jar:4.2.2.Final:compile -- module io.netty.buffer
    io.netty:netty-codec-base:jar:4.2.2.Final:compile -- module io.netty.codec
    io.netty:netty-codec-compression:jar:4.2.2.Final:compile -- module io.netty.codec.compression
@@ -342,28 +359,31 @@ java src/GenerateReadme.java > README.md
 ## quarkus-3
 | Dependencies | 🧩 | 🟢 | ⚪ |
 |-------------:|----:|----:|----:|
-| 37 | 25 | 0 | 12 |
+| 41 | 26 | 0 | 15 |
 ```
    io.github.crac:org-crac:jar:0.1.3:compile -- module org.crac (auto)
-   io.quarkus.arc:arc:jar:3.24.1:compile -- module arc (auto)
-   io.quarkus:quarkus-arc:jar:3.24.1:compile -- module quarkus.arc (auto)
-   io.quarkus:quarkus-bootstrap-runner:jar:3.24.1:compile -- module quarkus.bootstrap.runner (auto)
-   io.quarkus:quarkus-classloader-commons:jar:3.24.1:compile -- module quarkus.classloader.commons (auto)
-   io.quarkus:quarkus-core:jar:3.24.1:compile -- module quarkus.core (auto)
-   io.quarkus:quarkus-development-mode-spi:jar:3.24.1:compile -- module quarkus.development.mode.spi (auto)
+   io.quarkus.arc:arc:jar:3.24.2:compile -- module arc (auto)
+   io.quarkus:quarkus-arc:jar:3.24.2:compile -- module quarkus.arc (auto)
+   io.quarkus:quarkus-bootstrap-runner:jar:3.24.2:compile -- module quarkus.bootstrap.runner (auto)
+   io.quarkus:quarkus-classloader-commons:jar:3.24.2:compile -- module quarkus.classloader.commons (auto)
+   io.quarkus:quarkus-core:jar:3.24.2:compile -- module quarkus.core (auto)
+   io.quarkus:quarkus-development-mode-spi:jar:3.24.2:compile -- module quarkus.development.mode.spi (auto)
    io.quarkus:quarkus-fs-util:jar:1.0.0:compile -- module quarkus.fs.util (auto)
-   io.quarkus:quarkus-ide-launcher:jar:3.24.1:compile -- module quarkus.ide.launcher (auto)
-   io.smallrye.common:smallrye-common-annotation:jar:2.12.0:compile -- module io.smallrye.common.annotation
-   io.smallrye.common:smallrye-common-constraint:jar:2.12.0:compile -- module io.smallrye.common.constraint
-   io.smallrye.common:smallrye-common-cpu:jar:2.12.0:compile -- module io.smallrye.common.cpu
-   io.smallrye.common:smallrye-common-expression:jar:2.12.0:compile -- module io.smallrye.common.expression
-   io.smallrye.common:smallrye-common-function:jar:2.12.0:compile -- module io.smallrye.common.function
-   io.smallrye.common:smallrye-common-io:jar:2.12.0:compile -- module io.smallrye.common.io
-   io.smallrye.common:smallrye-common-net:jar:2.12.0:compile -- module io.smallrye.common.net
-   io.smallrye.common:smallrye-common-os:jar:2.12.0:compile -- module io.smallrye.common.os
-   io.smallrye.common:smallrye-common-ref:jar:2.12.0:compile -- module io.smallrye.common.ref
+   io.quarkus:quarkus-ide-launcher:jar:3.24.2:compile -- module quarkus.ide.launcher (auto)
+   io.smallrye.common:smallrye-common-annotation:jar:2.12.2:compile -- module io.smallrye.common.annotation
+   io.smallrye.common:smallrye-common-classloader:jar:2.12.2:compile -- module io.smallrye.common.classloader
+   io.smallrye.common:smallrye-common-constraint:jar:2.12.2:compile -- module io.smallrye.common.constraint
+   io.smallrye.common:smallrye-common-cpu:jar:2.12.2:compile -- module io.smallrye.common.cpu
+   io.smallrye.common:smallrye-common-expression:jar:2.12.2:compile -- module io.smallrye.common.expression
+   io.smallrye.common:smallrye-common-function:jar:2.12.2:compile -- module io.smallrye.common.function
+   io.smallrye.common:smallrye-common-io:jar:2.12.2:compile -- module io.smallrye.common.io
+   io.smallrye.common:smallrye-common-net:jar:2.12.2:compile -- module io.smallrye.common.net
+   io.smallrye.common:smallrye-common-os:jar:2.12.2:compile -- module io.smallrye.common.os
+   io.smallrye.common:smallrye-common-ref:jar:2.12.2:compile -- module io.smallrye.common.ref
+   io.smallrye.config:smallrye-config-common:jar:3.13.2:compile -- module smallrye.config.common (auto)
+   io.smallrye.config:smallrye-config-core:jar:3.13.2:compile -- module smallrye.config.core (auto)
    io.smallrye.config:smallrye-config:jar:3.13.2:compile -- module smallrye.config (auto)
-   io.smallrye.reactive:mutiny:jar:2.9.0:compile -- module io.smallrye.mutiny
+   io.smallrye.reactive:mutiny:jar:2.9.2:compile -- module io.smallrye.mutiny
    jakarta.annotation:jakarta.annotation-api:jar:3.0.0:compile -- module jakarta.annotation
    jakarta.el:jakarta.el-api:jar:6.0.1:compile -- module jakarta.el
    jakarta.enterprise:jakarta.enterprise.cdi-api:jar:4.1.0:compile -- module jakarta.cdi
@@ -372,6 +392,7 @@ java src/GenerateReadme.java > README.md
    jakarta.interceptor:jakarta.interceptor-api:jar:2.2.0:compile -- module jakarta.interceptor
    jakarta.json:jakarta.json-api:jar:2.1.3:compile -- module jakarta.json
    jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile -- module jakarta.transaction
+   org.eclipse.microprofile.config:microprofile-config-api:jar:3.1:compile -- module microprofile.config.api (auto)
    org.eclipse.microprofile.context-propagation:microprofile-context-propagation-api:jar:1.3:compile -- module microprofile.context.propagation.api (auto)
    org.eclipse.parsson:parsson:jar:1.1.7:compile -- module org.eclipse.parsson
    org.jboss.logging:jboss-logging:jar:3.6.1.Final:compile -- module org.jboss.logging
@@ -396,7 +417,7 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 1 | 1 | 0 | 0 |
 ```
-   org.yaml:snakeyaml:jar:2.2:compile -- module org.yaml.snakeyaml
+   org.yaml:snakeyaml:jar:2.4:compile -- module org.yaml.snakeyaml
 ```
 
 ## spring-boot-3

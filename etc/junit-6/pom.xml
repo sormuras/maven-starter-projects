@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>org.example</groupId>
-    <artifactId>junit-framework</artifactId>
+    <artifactId>junit-6</artifactId>
     <version>1</version>
 
     <dependencyManagement>
@@ -17,19 +17,10 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-reporting</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-suite</artifactId>
         </dependency>
     </dependencies>
 </project>
