@@ -36,6 +36,7 @@
         <module>etc/slf4j-2</module>
         <module>etc/snakeyaml-2</module>
         <module>etc/spring-boot-3</module>
+        <module>etc/spring-boot-4</module>
         <module>etc/streamex-0</module>
     </modules>
 </project>
