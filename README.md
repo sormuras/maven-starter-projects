@@ -69,7 +69,7 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 1 | 1 | 0 | 0 |
 ```
-   org.apache.commons:commons-exec:jar:1.5.0:compile -- module org.apache.commons.exec
+   org.apache.commons:commons-exec:jar:1.6.0:compile -- module org.apache.commons.exec
 ```
 
 ## apache-commons-io-2
@@ -319,20 +319,20 @@ java src/GenerateReadme.java > README.md
    io.micronaut.serde:micronaut-serde-api:jar:2.16.2:compile -- module io.micronaut.serde.micronaut_serde_api [auto]
    io.micronaut.serde:micronaut-serde-jackson:jar:2.16.2:compile -- module io.micronaut.serde.micronaut_serde_jackson [auto]
    io.micronaut.serde:micronaut-serde-support:jar:2.16.2:runtime -- module io.micronaut.serde.micronaut_serde_support [auto]
-   io.micronaut:micronaut-aop:jar:4.10.8:compile -- module io.micronaut.micronaut_aop [auto]
-   io.micronaut:micronaut-buffer-netty:jar:4.10.8:compile -- module io.micronaut.micronaut_buffer_netty [auto]
-   io.micronaut:micronaut-context-propagation:jar:4.10.8:compile -- module io.micronaut.micronaut_context_propagation [auto]
-   io.micronaut:micronaut-context:jar:4.10.8:compile -- module io.micronaut.micronaut_context [auto]
-   io.micronaut:micronaut-core-reactive:jar:4.10.8:compile -- module io.micronaut.micronaut_core_reactive [auto]
-   io.micronaut:micronaut-core:jar:4.10.8:compile -- module io.micronaut.micronaut_core [auto]
-   io.micronaut:micronaut-http-netty:jar:4.10.8:compile -- module io.micronaut.micronaut_http_netty [auto]
-   io.micronaut:micronaut-http-server-netty:jar:4.10.8:compile -- module io.micronaut.micronaut_http_server_netty [auto]
-   io.micronaut:micronaut-http-server:jar:4.10.8:compile -- module io.micronaut.micronaut_http_server [auto]
-   io.micronaut:micronaut-http:jar:4.10.8:compile -- module io.micronaut.micronaut_http [auto]
-   io.micronaut:micronaut-inject:jar:4.10.8:compile -- module io.micronaut.micronaut_inject [auto]
-   io.micronaut:micronaut-jackson-core:jar:4.10.8:compile -- module io.micronaut.micronaut_jackson_core [auto]
-   io.micronaut:micronaut-json-core:jar:4.10.8:compile -- module io.micronaut.micronaut_json_core [auto]
-   io.micronaut:micronaut-router:jar:4.10.8:compile -- module io.micronaut.micronaut_router [auto]
+   io.micronaut:micronaut-aop:jar:4.10.9:compile -- module io.micronaut.micronaut_aop [auto]
+   io.micronaut:micronaut-buffer-netty:jar:4.10.9:compile -- module io.micronaut.micronaut_buffer_netty [auto]
+   io.micronaut:micronaut-context-propagation:jar:4.10.9:compile -- module io.micronaut.micronaut_context_propagation [auto]
+   io.micronaut:micronaut-context:jar:4.10.9:compile -- module io.micronaut.micronaut_context [auto]
+   io.micronaut:micronaut-core-reactive:jar:4.10.9:compile -- module io.micronaut.micronaut_core_reactive [auto]
+   io.micronaut:micronaut-core:jar:4.10.9:compile -- module io.micronaut.micronaut_core [auto]
+   io.micronaut:micronaut-http-netty:jar:4.10.9:compile -- module io.micronaut.micronaut_http_netty [auto]
+   io.micronaut:micronaut-http-server-netty:jar:4.10.9:compile -- module io.micronaut.micronaut_http_server_netty [auto]
+   io.micronaut:micronaut-http-server:jar:4.10.9:compile -- module io.micronaut.micronaut_http_server [auto]
+   io.micronaut:micronaut-http:jar:4.10.9:compile -- module io.micronaut.micronaut_http [auto]
+   io.micronaut:micronaut-inject:jar:4.10.9:compile -- module io.micronaut.micronaut_inject [auto]
+   io.micronaut:micronaut-jackson-core:jar:4.10.9:compile -- module io.micronaut.micronaut_jackson_core [auto]
+   io.micronaut:micronaut-json-core:jar:4.10.9:compile -- module io.micronaut.micronaut_json_core [auto]
+   io.micronaut:micronaut-router:jar:4.10.9:compile -- module io.micronaut.micronaut_router [auto]
    io.netty:netty-buffer:jar:4.2.7.Final:compile -- module io.netty.buffer
    io.netty:netty-codec-base:jar:4.2.7.Final:compile -- module io.netty.codec
    io.netty:netty-codec-compression:jar:4.2.7.Final:compile -- module io.netty.codec.compression
@@ -363,14 +363,14 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 41 | 27 | 0 | 14 |
 ```
-   io.quarkus.arc:arc:jar:3.29.4:compile -- module arc (auto)
-   io.quarkus:quarkus-arc:jar:3.29.4:compile -- module quarkus.arc (auto)
-   io.quarkus:quarkus-bootstrap-runner:jar:3.29.4:compile -- module quarkus.bootstrap.runner (auto)
-   io.quarkus:quarkus-classloader-commons:jar:3.29.4:compile -- module quarkus.classloader.commons (auto)
-   io.quarkus:quarkus-core:jar:3.29.4:compile -- module quarkus.core (auto)
-   io.quarkus:quarkus-development-mode-spi:jar:3.29.4:compile -- module quarkus.development.mode.spi (auto)
+   io.quarkus.arc:arc:jar:3.30.1:compile -- module arc (auto)
+   io.quarkus:quarkus-arc:jar:3.30.1:compile -- module quarkus.arc (auto)
+   io.quarkus:quarkus-bootstrap-runner:jar:3.30.1:compile -- module quarkus.bootstrap.runner (auto)
+   io.quarkus:quarkus-classloader-commons:jar:3.30.1:compile -- module quarkus.classloader.commons (auto)
+   io.quarkus:quarkus-core:jar:3.30.1:compile -- module quarkus.core (auto)
+   io.quarkus:quarkus-development-mode-spi:jar:3.30.1:compile -- module quarkus.development.mode.spi (auto)
    io.quarkus:quarkus-fs-util:jar:1.2.0:compile -- module quarkus.fs.util (auto)
-   io.quarkus:quarkus-ide-launcher:jar:3.29.4:compile -- module quarkus.ide.launcher (auto)
+   io.quarkus:quarkus-ide-launcher:jar:3.30.1:compile -- module quarkus.ide.launcher (auto)
    io.smallrye.common:smallrye-common-annotation:jar:2.14.0:compile -- module io.smallrye.common.annotation
    io.smallrye.common:smallrye-common-classloader:jar:2.14.0:compile -- module io.smallrye.common.classloader
    io.smallrye.common:smallrye-common-constraint:jar:2.14.0:compile -- module io.smallrye.common.constraint
@@ -427,39 +427,39 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 34 | 17 | 17 | 0 |
 ```
-   ch.qos.logback:logback-classic:jar:1.5.20:compile -- module ch.qos.logback.classic
-   ch.qos.logback:logback-core:jar:1.5.20:compile -- module ch.qos.logback.core
-   com.fasterxml.jackson.core:jackson-annotations:jar:2.19.2:compile -- module com.fasterxml.jackson.annotation
-   com.fasterxml.jackson.core:jackson-core:jar:2.19.2:compile -- module com.fasterxml.jackson.core
-   com.fasterxml.jackson.core:jackson-databind:jar:2.19.2:compile -- module com.fasterxml.jackson.databind
-   com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.19.2:compile -- module com.fasterxml.jackson.datatype.jdk8
-   com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.19.2:compile -- module com.fasterxml.jackson.datatype.jsr310
-   com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.19.2:compile -- module com.fasterxml.jackson.module.paramnames
-   io.micrometer:micrometer-commons:jar:1.15.5:compile -- module micrometer.commons [auto]
-   io.micrometer:micrometer-observation:jar:1.15.5:compile -- module micrometer.observation [auto]
+   ch.qos.logback:logback-classic:jar:1.5.25:compile -- module ch.qos.logback.classic
+   ch.qos.logback:logback-core:jar:1.5.25:compile -- module ch.qos.logback.core
+   com.fasterxml.jackson.core:jackson-annotations:jar:2.19.4:compile -- module com.fasterxml.jackson.annotation
+   com.fasterxml.jackson.core:jackson-core:jar:2.19.4:compile -- module com.fasterxml.jackson.core
+   com.fasterxml.jackson.core:jackson-databind:jar:2.19.4:compile -- module com.fasterxml.jackson.databind
+   com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.19.4:compile -- module com.fasterxml.jackson.datatype.jdk8
+   com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.19.4:compile -- module com.fasterxml.jackson.datatype.jsr310
+   com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.19.4:compile -- module com.fasterxml.jackson.module.paramnames
+   io.micrometer:micrometer-commons:jar:1.15.8:compile -- module micrometer.commons [auto]
+   io.micrometer:micrometer-observation:jar:1.15.8:compile -- module micrometer.observation [auto]
    jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile -- module jakarta.annotation
    org.apache.logging.log4j:log4j-api:jar:2.24.3:compile -- module org.apache.logging.log4j
    org.apache.logging.log4j:log4j-to-slf4j:jar:2.24.3:compile -- module org.apache.logging.log4j.to.slf4j
-   org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.48:compile -- module org.apache.tomcat.embed.core
-   org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.48:compile -- module org.apache.tomcat.embed.el
-   org.apache.tomcat.embed:tomcat-embed-websocket:jar:10.1.48:compile -- module org.apache.tomcat.embed.websocket
+   org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.50:compile -- module org.apache.tomcat.embed.core
+   org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.50:compile -- module org.apache.tomcat.embed.el
+   org.apache.tomcat.embed:tomcat-embed-websocket:jar:10.1.50:compile -- module org.apache.tomcat.embed.websocket
    org.slf4j:jul-to-slf4j:jar:2.0.17:compile -- module jul.to.slf4j
    org.slf4j:slf4j-api:jar:2.0.17:compile -- module org.slf4j
-   org.springframework.boot:spring-boot-autoconfigure:jar:3.5.7:compile -- module spring.boot.autoconfigure [auto]
-   org.springframework.boot:spring-boot-starter-json:jar:3.5.7:compile -- module spring.boot.starter.json [auto]
-   org.springframework.boot:spring-boot-starter-logging:jar:3.5.7:compile -- module spring.boot.starter.logging [auto]
-   org.springframework.boot:spring-boot-starter-tomcat:jar:3.5.7:compile -- module spring.boot.starter.tomcat [auto]
-   org.springframework.boot:spring-boot-starter-web:jar:3.5.7:compile -- module spring.boot.starter.web [auto]
-   org.springframework.boot:spring-boot-starter:jar:3.5.7:compile -- module spring.boot.starter [auto]
-   org.springframework.boot:spring-boot:jar:3.5.7:compile -- module spring.boot [auto]
-   org.springframework:spring-aop:jar:6.2.12:compile -- module spring.aop [auto]
-   org.springframework:spring-beans:jar:6.2.12:compile -- module spring.beans [auto]
-   org.springframework:spring-context:jar:6.2.12:compile -- module spring.context [auto]
-   org.springframework:spring-core:jar:6.2.12:compile -- module spring.core [auto]
-   org.springframework:spring-expression:jar:6.2.12:compile -- module spring.expression [auto]
-   org.springframework:spring-jcl:jar:6.2.12:compile -- module spring.jcl [auto]
-   org.springframework:spring-web:jar:6.2.12:compile -- module spring.web [auto]
-   org.springframework:spring-webmvc:jar:6.2.12:compile -- module spring.webmvc [auto]
+   org.springframework.boot:spring-boot-autoconfigure:jar:3.5.10:compile -- module spring.boot.autoconfigure [auto]
+   org.springframework.boot:spring-boot-starter-json:jar:3.5.10:compile -- module spring.boot.starter.json [auto]
+   org.springframework.boot:spring-boot-starter-logging:jar:3.5.10:compile -- module spring.boot.starter.logging [auto]
+   org.springframework.boot:spring-boot-starter-tomcat:jar:3.5.10:compile -- module spring.boot.starter.tomcat [auto]
+   org.springframework.boot:spring-boot-starter-web:jar:3.5.10:compile -- module spring.boot.starter.web [auto]
+   org.springframework.boot:spring-boot-starter:jar:3.5.10:compile -- module spring.boot.starter [auto]
+   org.springframework.boot:spring-boot:jar:3.5.10:compile -- module spring.boot [auto]
+   org.springframework:spring-aop:jar:6.2.15:compile -- module spring.aop [auto]
+   org.springframework:spring-beans:jar:6.2.15:compile -- module spring.beans [auto]
+   org.springframework:spring-context:jar:6.2.15:compile -- module spring.context [auto]
+   org.springframework:spring-core:jar:6.2.15:compile -- module spring.core [auto]
+   org.springframework:spring-expression:jar:6.2.15:compile -- module spring.expression [auto]
+   org.springframework:spring-jcl:jar:6.2.15:compile -- module spring.jcl [auto]
+   org.springframework:spring-web:jar:6.2.15:compile -- module spring.web [auto]
+   org.springframework:spring-webmvc:jar:6.2.15:compile -- module spring.webmvc [auto]
    org.yaml:snakeyaml:jar:2.4:compile -- module org.yaml.snakeyaml
 ```
 
@@ -468,45 +468,45 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 39 | 16 | 23 | 0 |
 ```
-   ch.qos.logback:logback-classic:jar:1.5.21:compile -- module ch.qos.logback.classic
-   ch.qos.logback:logback-core:jar:1.5.21:compile -- module ch.qos.logback.core
+   ch.qos.logback:logback-classic:jar:1.5.25:compile -- module ch.qos.logback.classic
+   ch.qos.logback:logback-core:jar:1.5.25:compile -- module ch.qos.logback.core
    com.fasterxml.jackson.core:jackson-annotations:jar:2.20:compile -- module com.fasterxml.jackson.annotation
    commons-logging:commons-logging:jar:1.3.5:compile -- module org.apache.commons.logging
-   io.micrometer:micrometer-commons:jar:1.16.0:compile -- module micrometer.commons [auto]
-   io.micrometer:micrometer-observation:jar:1.16.0:compile -- module micrometer.observation [auto]
+   io.micrometer:micrometer-commons:jar:1.16.2:compile -- module micrometer.commons [auto]
+   io.micrometer:micrometer-observation:jar:1.16.2:compile -- module micrometer.observation [auto]
    jakarta.annotation:jakarta.annotation-api:jar:3.0.0:compile -- module jakarta.annotation
-   org.apache.logging.log4j:log4j-api:jar:2.25.2:compile -- module org.apache.logging.log4j
-   org.apache.logging.log4j:log4j-to-slf4j:jar:2.25.2:compile -- module org.apache.logging.log4j.to.slf4j
-   org.apache.tomcat.embed:tomcat-embed-core:jar:11.0.14:compile -- module org.apache.tomcat.embed.core
-   org.apache.tomcat.embed:tomcat-embed-el:jar:11.0.14:compile -- module org.apache.tomcat.embed.el
-   org.apache.tomcat.embed:tomcat-embed-websocket:jar:11.0.14:compile -- module org.apache.tomcat.embed.websocket
+   org.apache.logging.log4j:log4j-api:jar:2.25.3:compile -- module org.apache.logging.log4j
+   org.apache.logging.log4j:log4j-to-slf4j:jar:2.25.3:compile -- module org.apache.logging.log4j.to.slf4j
+   org.apache.tomcat.embed:tomcat-embed-core:jar:11.0.15:compile -- module org.apache.tomcat.embed.core
+   org.apache.tomcat.embed:tomcat-embed-el:jar:11.0.15:compile -- module org.apache.tomcat.embed.el
+   org.apache.tomcat.embed:tomcat-embed-websocket:jar:11.0.15:compile -- module org.apache.tomcat.embed.websocket
    org.jspecify:jspecify:jar:1.0.0:compile -- module org.jspecify
    org.slf4j:jul-to-slf4j:jar:2.0.17:compile -- module jul.to.slf4j
    org.slf4j:slf4j-api:jar:2.0.17:compile -- module org.slf4j
-   org.springframework.boot:spring-boot-autoconfigure:jar:4.0.0:compile -- module spring.boot.autoconfigure [auto]
-   org.springframework.boot:spring-boot-http-converter:jar:4.0.0:compile -- module spring.boot.http.converter [auto]
-   org.springframework.boot:spring-boot-jackson:jar:4.0.0:compile -- module spring.boot.jackson [auto]
-   org.springframework.boot:spring-boot-servlet:jar:4.0.0:compile -- module spring.boot.servlet [auto]
-   org.springframework.boot:spring-boot-starter-jackson:jar:4.0.0:compile -- module spring.boot.starter.jackson [auto]
-   org.springframework.boot:spring-boot-starter-logging:jar:4.0.0:compile -- module spring.boot.starter.logging [auto]
-   org.springframework.boot:spring-boot-starter-tomcat-runtime:jar:4.0.0:compile -- module spring.boot.starter.tomcat.runtime [auto]
-   org.springframework.boot:spring-boot-starter-tomcat:jar:4.0.0:compile -- module spring.boot.starter.tomcat [auto]
-   org.springframework.boot:spring-boot-starter-web:jar:4.0.0:compile -- module spring.boot.starter.web [auto]
-   org.springframework.boot:spring-boot-starter:jar:4.0.0:compile -- module spring.boot.starter [auto]
-   org.springframework.boot:spring-boot-tomcat:jar:4.0.0:compile -- module spring.boot.tomcat [auto]
-   org.springframework.boot:spring-boot-web-server:jar:4.0.0:compile -- module spring.boot.web.server [auto]
-   org.springframework.boot:spring-boot-webmvc:jar:4.0.0:compile -- module spring.boot.webmvc [auto]
-   org.springframework.boot:spring-boot:jar:4.0.0:compile -- module spring.boot [auto]
-   org.springframework:spring-aop:jar:7.0.1:compile -- module spring.aop [auto]
-   org.springframework:spring-beans:jar:7.0.1:compile -- module spring.beans [auto]
-   org.springframework:spring-context:jar:7.0.1:compile -- module spring.context [auto]
-   org.springframework:spring-core:jar:7.0.1:compile -- module spring.core [auto]
-   org.springframework:spring-expression:jar:7.0.1:compile -- module spring.expression [auto]
-   org.springframework:spring-web:jar:7.0.1:compile -- module spring.web [auto]
-   org.springframework:spring-webmvc:jar:7.0.1:compile -- module spring.webmvc [auto]
+   org.springframework.boot:spring-boot-autoconfigure:jar:4.0.2:compile -- module spring.boot.autoconfigure [auto]
+   org.springframework.boot:spring-boot-http-converter:jar:4.0.2:compile -- module spring.boot.http.converter [auto]
+   org.springframework.boot:spring-boot-jackson:jar:4.0.2:compile -- module spring.boot.jackson [auto]
+   org.springframework.boot:spring-boot-servlet:jar:4.0.2:compile -- module spring.boot.servlet [auto]
+   org.springframework.boot:spring-boot-starter-jackson:jar:4.0.2:compile -- module spring.boot.starter.jackson [auto]
+   org.springframework.boot:spring-boot-starter-logging:jar:4.0.2:compile -- module spring.boot.starter.logging [auto]
+   org.springframework.boot:spring-boot-starter-tomcat-runtime:jar:4.0.2:compile -- module spring.boot.starter.tomcat.runtime [auto]
+   org.springframework.boot:spring-boot-starter-tomcat:jar:4.0.2:compile -- module spring.boot.starter.tomcat [auto]
+   org.springframework.boot:spring-boot-starter-web:jar:4.0.2:compile -- module spring.boot.starter.web [auto]
+   org.springframework.boot:spring-boot-starter:jar:4.0.2:compile -- module spring.boot.starter [auto]
+   org.springframework.boot:spring-boot-tomcat:jar:4.0.2:compile -- module spring.boot.tomcat [auto]
+   org.springframework.boot:spring-boot-web-server:jar:4.0.2:compile -- module spring.boot.web.server [auto]
+   org.springframework.boot:spring-boot-webmvc:jar:4.0.2:compile -- module spring.boot.webmvc [auto]
+   org.springframework.boot:spring-boot:jar:4.0.2:compile -- module spring.boot [auto]
+   org.springframework:spring-aop:jar:7.0.3:compile -- module spring.aop [auto]
+   org.springframework:spring-beans:jar:7.0.3:compile -- module spring.beans [auto]
+   org.springframework:spring-context:jar:7.0.3:compile -- module spring.context [auto]
+   org.springframework:spring-core:jar:7.0.3:compile -- module spring.core [auto]
+   org.springframework:spring-expression:jar:7.0.3:compile -- module spring.expression [auto]
+   org.springframework:spring-web:jar:7.0.3:compile -- module spring.web [auto]
+   org.springframework:spring-webmvc:jar:7.0.3:compile -- module spring.webmvc [auto]
    org.yaml:snakeyaml:jar:2.5:compile -- module org.yaml.snakeyaml
-   tools.jackson.core:jackson-core:jar:3.0.2:compile -- module tools.jackson.core
-   tools.jackson.core:jackson-databind:jar:3.0.2:compile -- module tools.jackson.databind
+   tools.jackson.core:jackson-core:jar:3.0.4:compile -- module tools.jackson.core
+   tools.jackson.core:jackson-databind:jar:3.0.4:compile -- module tools.jackson.databind
 ```
 
 ## streamex-0
