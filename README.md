@@ -38,6 +38,7 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[spring-boot-3](#spring-boot-3)| 34 | 17 | 17 | 0 |
 |[spring-boot-4](#spring-boot-4)| 39 | 16 | 23 | 0 |
 |[streamex-0](#streamex-0)| 1 | 1 | 0 | 0 |
+|[tamboui-0](#tamboui-0)| 7 | 7 | 0 | 0 |
 ---
 Add a new project by running and edit the generated `etc/<Name>/pom.xml` file if required:
 - `<Name>` is short directory name describing the project
@@ -515,4 +516,18 @@ java src/GenerateReadme.java > README.md
 | 1 | 1 | 0 | 0 |
 ```
    one.util:streamex:jar:0.8.4:compile -- module one.util.streamex
+```
+
+## tamboui-0
+| Dependencies | 🧩 | 🟢 | ⚪ |
+|-------------:|----:|----:|----:|
+| 7 | 7 | 0 | 0 |
+```
+   dev.tamboui:tamboui-annotations:jar:0.1.0:compile -- module dev.tamboui.annotations
+   dev.tamboui:tamboui-core:jar:0.1.0:compile -- module dev.tamboui.core
+   dev.tamboui:tamboui-css:jar:0.1.0:compile -- module dev.tamboui.css
+   dev.tamboui:tamboui-panama-backend:jar:0.1.0:compile -- module dev.tamboui.panama.backend
+   dev.tamboui:tamboui-toolkit:jar:0.1.0:compile -- module dev.tamboui.toolkit
+   dev.tamboui:tamboui-tui:jar:0.1.0:compile -- module dev.tamboui.tui
+   dev.tamboui:tamboui-widgets:jar:0.1.0:compile -- module dev.tamboui.widgets
 ```

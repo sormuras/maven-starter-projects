@@ -38,5 +38,6 @@
         <module>etc/spring-boot-3</module>
         <module>etc/spring-boot-4</module>
         <module>etc/streamex-0</module>
+        <module>etc/tamboui-0</module>
     </modules>
 </project>
