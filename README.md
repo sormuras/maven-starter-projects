@@ -29,7 +29,8 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[junit-4](#junit-4)| 2 | 0 | 1 | 1 |
 |[junit-5](#junit-5)| 8 | 8 | 0 | 0 |
 |[junit-6](#junit-6)| 9 | 9 | 0 | 0 |
-|[junit-framework](#junit-framework)| 15 | 15 | 0 | 0 |
+|[junit-framework](#junit-framework)| 17 | 17 | 0 | 0 |
+|[lwjgl-3](#lwjgl-3)| 79 | 79 | 0 | 0 |
 |[micronaut-4](#micronaut-4)| 36 | 17 | 19 | 0 |
 |[picocli-4](#picocli-4)| 1 | 1 | 0 | 0 |
 |[quarkus-3](#quarkus-3)| 41 | 27 | 0 | 14 |
@@ -111,9 +112,9 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 6 | 5 | 0 | 1 |
 ```
-   com.google.errorprone:error_prone_annotations:jar:2.41.0:compile -- module com.google.errorprone.annotations
+   com.google.errorprone:error_prone_annotations:jar:2.47.0:compile -- module com.google.errorprone.annotations
    com.google.guava:failureaccess:jar:1.0.3:compile -- module com.google.common.util.concurrent.internal
-   com.google.guava:guava:jar:33.5.0-jre:compile -- module com.google.common
+   com.google.guava:guava:jar:33.6.0-jre:compile -- module com.google.common
    com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile -- module listenablefuture (auto)
    com.google.j2objc:j2objc-annotations:jar:3.1:compile -- module com.google.j2objc.annotations
    org.jspecify:jspecify:jar:1.0.0:compile -- module org.jspecify
@@ -213,9 +214,9 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 3 | 3 | 0 | 0 |
 ```
-   com.fasterxml.jackson.core:jackson-annotations:jar:2.20:compile -- module com.fasterxml.jackson.annotation
-   com.fasterxml.jackson.core:jackson-core:jar:2.20.1:compile -- module com.fasterxml.jackson.core
-   com.fasterxml.jackson.core:jackson-databind:jar:2.20.1:compile -- module com.fasterxml.jackson.databind
+   com.fasterxml.jackson.core:jackson-annotations:jar:2.21:compile -- module com.fasterxml.jackson.annotation
+   com.fasterxml.jackson.core:jackson-core:jar:2.21.3:compile -- module com.fasterxml.jackson.core
+   com.fasterxml.jackson.core:jackson-databind:jar:2.21.3:compile -- module com.fasterxml.jackson.databind
 ```
 
 ## javalin-2
@@ -261,12 +262,12 @@ java src/GenerateReadme.java > README.md
 | 8 | 8 | 0 | 0 |
 ```
    org.apiguardian:apiguardian-api:jar:1.1.2:compile -- module org.apiguardian.api
-   org.junit.jupiter:junit-jupiter-api:jar:5.14.2:compile -- module org.junit.jupiter.api
-   org.junit.jupiter:junit-jupiter-engine:jar:5.14.2:runtime -- module org.junit.jupiter.engine
-   org.junit.jupiter:junit-jupiter-params:jar:5.14.2:compile -- module org.junit.jupiter.params
-   org.junit.jupiter:junit-jupiter:jar:5.14.2:compile -- module org.junit.jupiter
-   org.junit.platform:junit-platform-commons:jar:1.14.2:compile -- module org.junit.platform.commons
-   org.junit.platform:junit-platform-engine:jar:1.14.2:runtime -- module org.junit.platform.engine
+   org.junit.jupiter:junit-jupiter-api:jar:5.14.4:compile -- module org.junit.jupiter.api
+   org.junit.jupiter:junit-jupiter-engine:jar:5.14.4:runtime -- module org.junit.jupiter.engine
+   org.junit.jupiter:junit-jupiter-params:jar:5.14.4:compile -- module org.junit.jupiter.params
+   org.junit.jupiter:junit-jupiter:jar:5.14.4:compile -- module org.junit.jupiter
+   org.junit.platform:junit-platform-commons:jar:1.14.4:compile -- module org.junit.platform.commons
+   org.junit.platform:junit-platform-engine:jar:1.14.4:runtime -- module org.junit.platform.engine
    org.opentest4j:opentest4j:jar:1.3.0:compile -- module org.opentest4j
 ```
 
@@ -277,35 +278,123 @@ java src/GenerateReadme.java > README.md
 ```
    org.apiguardian:apiguardian-api:jar:1.1.2:compile -- module org.apiguardian.api
    org.jspecify:jspecify:jar:1.0.0:compile -- module org.jspecify
-   org.junit.jupiter:junit-jupiter-api:jar:6.1.0-M1:compile -- module org.junit.jupiter.api
-   org.junit.jupiter:junit-jupiter-engine:jar:6.1.0-M1:runtime -- module org.junit.jupiter.engine
-   org.junit.jupiter:junit-jupiter-params:jar:6.1.0-M1:compile -- module org.junit.jupiter.params
-   org.junit.jupiter:junit-jupiter:jar:6.1.0-M1:compile -- module org.junit.jupiter
-   org.junit.platform:junit-platform-commons:jar:6.1.0-M1:compile -- module org.junit.platform.commons
-   org.junit.platform:junit-platform-engine:jar:6.1.0-M1:runtime -- module org.junit.platform.engine
+   org.junit.jupiter:junit-jupiter-api:jar:6.1.0:compile -- module org.junit.jupiter.api
+   org.junit.jupiter:junit-jupiter-engine:jar:6.1.0:runtime -- module org.junit.jupiter.engine
+   org.junit.jupiter:junit-jupiter-params:jar:6.1.0:compile -- module org.junit.jupiter.params
+   org.junit.jupiter:junit-jupiter:jar:6.1.0:compile -- module org.junit.jupiter
+   org.junit.platform:junit-platform-commons:jar:6.1.0:compile -- module org.junit.platform.commons
+   org.junit.platform:junit-platform-engine:jar:6.1.0:runtime -- module org.junit.platform.engine
    org.opentest4j:opentest4j:jar:1.3.0:compile -- module org.opentest4j
 ```
 
 ## junit-framework
 | Dependencies | 🧩 | 🟢 | ⚪ |
 |-------------:|----:|----:|----:|
-| 15 | 15 | 0 | 0 |
+| 17 | 17 | 0 | 0 |
 ```
    org.apiguardian:apiguardian-api:jar:1.1.2:compile -- module org.apiguardian.api
    org.jspecify:jspecify:jar:1.0.0:compile -- module org.jspecify
-   org.junit.jupiter:junit-jupiter-api:jar:6.1.0-M1:compile -- module org.junit.jupiter.api
-   org.junit.jupiter:junit-jupiter-engine:jar:6.1.0-M1:runtime -- module org.junit.jupiter.engine
-   org.junit.jupiter:junit-jupiter-params:jar:6.1.0-M1:compile -- module org.junit.jupiter.params
-   org.junit.jupiter:junit-jupiter:jar:6.1.0-M1:compile -- module org.junit.jupiter
-   org.junit.platform:junit-platform-commons:jar:6.1.0-M1:compile -- module org.junit.platform.commons
-   org.junit.platform:junit-platform-engine:jar:6.1.0-M1:compile -- module org.junit.platform.engine
-   org.junit.platform:junit-platform-launcher:jar:6.1.0-M1:compile -- module org.junit.platform.launcher
-   org.junit.platform:junit-platform-reporting:jar:6.1.0-M1:compile -- module org.junit.platform.reporting
-   org.junit.platform:junit-platform-suite-api:jar:6.1.0-M1:compile -- module org.junit.platform.suite.api
-   org.junit.platform:junit-platform-suite-engine:jar:6.1.0-M1:runtime -- module org.junit.platform.suite.engine
-   org.junit.platform:junit-platform-suite:jar:6.1.0-M1:compile -- module org.junit.platform.suite
+   org.junit.jupiter:junit-jupiter-api:jar:6.1.0:compile -- module org.junit.jupiter.api
+   org.junit.jupiter:junit-jupiter-engine:jar:6.1.0:compile -- module org.junit.jupiter.engine
+   org.junit.jupiter:junit-jupiter-params:jar:6.1.0:compile -- module org.junit.jupiter.params
+   org.junit.jupiter:junit-jupiter:jar:6.1.0:compile -- module org.junit.jupiter
+   org.junit.platform:junit-platform-commons:jar:6.1.0:compile -- module org.junit.platform.commons
+   org.junit.platform:junit-platform-console:jar:6.1.0:runtime -- module org.junit.platform.console
+   org.junit.platform:junit-platform-engine:jar:6.1.0:compile -- module org.junit.platform.engine
+   org.junit.platform:junit-platform-launcher:jar:6.1.0:compile -- module org.junit.platform.launcher
+   org.junit.platform:junit-platform-reporting:jar:6.1.0:compile -- module org.junit.platform.reporting
+   org.junit.platform:junit-platform-suite-api:jar:6.1.0:compile -- module org.junit.platform.suite.api
+   org.junit.platform:junit-platform-suite-engine:jar:6.1.0:runtime -- module org.junit.platform.suite.engine
+   org.junit.platform:junit-platform-suite:jar:6.1.0:compile -- module org.junit.platform.suite
+   org.junit:junit-start:jar:6.1.0:compile -- module org.junit.start
    org.opentest4j.reporting:open-test-reporting-tooling-spi:jar:0.2.5:runtime -- module org.opentest4j.reporting.tooling.spi
    org.opentest4j:opentest4j:jar:1.3.0:compile -- module org.opentest4j
+```
+
+## lwjgl-3
+| Dependencies | 🧩 | 🟢 | ⚪ |
+|-------------:|----:|----:|----:|
+| 79 | 79 | 0 | 0 |
+```
+   org.lwjgl:lwjgl-assimp:jar:3.4.1:compile -- module org.lwjgl.assimp
+   org.lwjgl:lwjgl-assimp:jar:natives-windows:3.4.1:compile -- module org.lwjgl.assimp.natives
+   org.lwjgl:lwjgl-bgfx:jar:3.4.1:compile -- module org.lwjgl.bgfx
+   org.lwjgl:lwjgl-bgfx:jar:natives-windows:3.4.1:compile -- module org.lwjgl.bgfx.natives
+   org.lwjgl:lwjgl-egl:jar:3.4.1:compile -- module org.lwjgl.egl
+   org.lwjgl:lwjgl-fmod:jar:3.4.1:compile -- module org.lwjgl.fmod
+   org.lwjgl:lwjgl-freetype:jar:3.4.1:compile -- module org.lwjgl.freetype
+   org.lwjgl:lwjgl-freetype:jar:natives-windows:3.4.1:compile -- module org.lwjgl.freetype.natives
+   org.lwjgl:lwjgl-glfw:jar:3.4.1:compile -- module org.lwjgl.glfw
+   org.lwjgl:lwjgl-glfw:jar:natives-windows:3.4.1:compile -- module org.lwjgl.glfw.natives
+   org.lwjgl:lwjgl-harfbuzz:jar:3.4.1:compile -- module org.lwjgl.harfbuzz
+   org.lwjgl:lwjgl-harfbuzz:jar:natives-windows:3.4.1:compile -- module org.lwjgl.harfbuzz.natives
+   org.lwjgl:lwjgl-hwloc:jar:3.4.1:compile -- module org.lwjgl.hwloc
+   org.lwjgl:lwjgl-hwloc:jar:natives-windows:3.4.1:compile -- module org.lwjgl.hwloc.natives
+   org.lwjgl:lwjgl-jawt:jar:3.4.1:compile -- module org.lwjgl.jawt
+   org.lwjgl:lwjgl-jemalloc:jar:3.4.1:compile -- module org.lwjgl.jemalloc
+   org.lwjgl:lwjgl-jemalloc:jar:natives-windows:3.4.1:compile -- module org.lwjgl.jemalloc.natives
+   org.lwjgl:lwjgl-ktx:jar:3.4.1:compile -- module org.lwjgl.ktx
+   org.lwjgl:lwjgl-ktx:jar:natives-windows:3.4.1:compile -- module org.lwjgl.ktx.natives
+   org.lwjgl:lwjgl-llvm:jar:3.4.1:compile -- module org.lwjgl.llvm
+   org.lwjgl:lwjgl-llvm:jar:natives-windows:3.4.1:compile -- module org.lwjgl.llvm.natives
+   org.lwjgl:lwjgl-lmdb:jar:3.4.1:compile -- module org.lwjgl.lmdb
+   org.lwjgl:lwjgl-lmdb:jar:natives-windows:3.4.1:compile -- module org.lwjgl.lmdb.natives
+   org.lwjgl:lwjgl-lz4:jar:3.4.1:compile -- module org.lwjgl.lz4
+   org.lwjgl:lwjgl-lz4:jar:natives-windows:3.4.1:compile -- module org.lwjgl.lz4.natives
+   org.lwjgl:lwjgl-meshoptimizer:jar:3.4.1:compile -- module org.lwjgl.meshoptimizer
+   org.lwjgl:lwjgl-meshoptimizer:jar:natives-windows:3.4.1:compile -- module org.lwjgl.meshoptimizer.natives
+   org.lwjgl:lwjgl-msdfgen:jar:3.4.1:compile -- module org.lwjgl.msdfgen
+   org.lwjgl:lwjgl-msdfgen:jar:natives-windows:3.4.1:compile -- module org.lwjgl.msdfgen.natives
+   org.lwjgl:lwjgl-nanovg:jar:3.4.1:compile -- module org.lwjgl.nanovg
+   org.lwjgl:lwjgl-nanovg:jar:natives-windows:3.4.1:compile -- module org.lwjgl.nanovg.natives
+   org.lwjgl:lwjgl-nfd:jar:3.4.1:compile -- module org.lwjgl.nfd
+   org.lwjgl:lwjgl-nfd:jar:natives-windows:3.4.1:compile -- module org.lwjgl.nfd.natives
+   org.lwjgl:lwjgl-nuklear:jar:3.4.1:compile -- module org.lwjgl.nuklear
+   org.lwjgl:lwjgl-nuklear:jar:natives-windows:3.4.1:compile -- module org.lwjgl.nuklear.natives
+   org.lwjgl:lwjgl-odbc:jar:3.4.1:compile -- module org.lwjgl.odbc
+   org.lwjgl:lwjgl-openal:jar:3.4.1:compile -- module org.lwjgl.openal
+   org.lwjgl:lwjgl-openal:jar:natives-windows:3.4.1:compile -- module org.lwjgl.openal.natives
+   org.lwjgl:lwjgl-opencl:jar:3.4.1:compile -- module org.lwjgl.opencl
+   org.lwjgl:lwjgl-opengl:jar:3.4.1:compile -- module org.lwjgl.opengl
+   org.lwjgl:lwjgl-opengl:jar:natives-windows:3.4.1:compile -- module org.lwjgl.opengl.natives
+   org.lwjgl:lwjgl-opengles:jar:3.4.1:compile -- module org.lwjgl.opengles
+   org.lwjgl:lwjgl-opengles:jar:natives-windows:3.4.1:compile -- module org.lwjgl.opengles.natives
+   org.lwjgl:lwjgl-openxr:jar:3.4.1:compile -- module org.lwjgl.openxr
+   org.lwjgl:lwjgl-openxr:jar:natives-windows:3.4.1:compile -- module org.lwjgl.openxr.natives
+   org.lwjgl:lwjgl-opus:jar:3.4.1:compile -- module org.lwjgl.opus
+   org.lwjgl:lwjgl-opus:jar:natives-windows:3.4.1:compile -- module org.lwjgl.opus.natives
+   org.lwjgl:lwjgl-par:jar:3.4.1:compile -- module org.lwjgl.par
+   org.lwjgl:lwjgl-par:jar:natives-windows:3.4.1:compile -- module org.lwjgl.par.natives
+   org.lwjgl:lwjgl-remotery:jar:3.4.1:compile -- module org.lwjgl.remotery
+   org.lwjgl:lwjgl-remotery:jar:natives-windows:3.4.1:compile -- module org.lwjgl.remotery.natives
+   org.lwjgl:lwjgl-renderdoc:jar:3.4.1:compile -- module org.lwjgl.renderdoc
+   org.lwjgl:lwjgl-rpmalloc:jar:3.4.1:compile -- module org.lwjgl.rpmalloc
+   org.lwjgl:lwjgl-rpmalloc:jar:natives-windows:3.4.1:compile -- module org.lwjgl.rpmalloc.natives
+   org.lwjgl:lwjgl-sdl:jar:3.4.1:compile -- module org.lwjgl.sdl
+   org.lwjgl:lwjgl-sdl:jar:natives-windows:3.4.1:compile -- module org.lwjgl.sdl.natives
+   org.lwjgl:lwjgl-shaderc:jar:3.4.1:compile -- module org.lwjgl.shaderc
+   org.lwjgl:lwjgl-shaderc:jar:natives-windows:3.4.1:compile -- module org.lwjgl.shaderc.natives
+   org.lwjgl:lwjgl-spng:jar:3.4.1:compile -- module org.lwjgl.spng
+   org.lwjgl:lwjgl-spng:jar:natives-windows:3.4.1:compile -- module org.lwjgl.spng.natives
+   org.lwjgl:lwjgl-spvc:jar:3.4.1:compile -- module org.lwjgl.spvc
+   org.lwjgl:lwjgl-spvc:jar:natives-windows:3.4.1:compile -- module org.lwjgl.spvc.natives
+   org.lwjgl:lwjgl-stb:jar:3.4.1:compile -- module org.lwjgl.stb
+   org.lwjgl:lwjgl-stb:jar:natives-windows:3.4.1:compile -- module org.lwjgl.stb.natives
+   org.lwjgl:lwjgl-tinyexr:jar:3.4.1:compile -- module org.lwjgl.tinyexr
+   org.lwjgl:lwjgl-tinyexr:jar:natives-windows:3.4.1:compile -- module org.lwjgl.tinyexr.natives
+   org.lwjgl:lwjgl-tinyfd:jar:3.4.1:compile -- module org.lwjgl.tinyfd
+   org.lwjgl:lwjgl-tinyfd:jar:natives-windows:3.4.1:compile -- module org.lwjgl.tinyfd.natives
+   org.lwjgl:lwjgl-vma:jar:3.4.1:compile -- module org.lwjgl.vma
+   org.lwjgl:lwjgl-vma:jar:natives-windows:3.4.1:compile -- module org.lwjgl.vma.natives
+   org.lwjgl:lwjgl-vulkan:jar:3.4.1:compile -- module org.lwjgl.vulkan
+   org.lwjgl:lwjgl-xxhash:jar:3.4.1:compile -- module org.lwjgl.xxhash
+   org.lwjgl:lwjgl-xxhash:jar:natives-windows:3.4.1:compile -- module org.lwjgl.xxhash.natives
+   org.lwjgl:lwjgl-yoga:jar:3.4.1:compile -- module org.lwjgl.yoga
+   org.lwjgl:lwjgl-yoga:jar:natives-windows:3.4.1:compile -- module org.lwjgl.yoga.natives
+   org.lwjgl:lwjgl-zstd:jar:3.4.1:compile -- module org.lwjgl.zstd
+   org.lwjgl:lwjgl-zstd:jar:natives-windows:3.4.1:compile -- module org.lwjgl.zstd.natives
+   org.lwjgl:lwjgl:jar:3.4.1:compile -- module org.lwjgl
+   org.lwjgl:lwjgl:jar:natives-windows:3.4.1:compile -- module org.lwjgl.natives
 ```
 
 ## micronaut-4
@@ -313,37 +402,37 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 36 | 17 | 19 | 0 |
 ```
-   ch.qos.logback:logback-classic:jar:1.5.19:runtime -- module ch.qos.logback.classic
-   ch.qos.logback:logback-core:jar:1.5.19:runtime -- module ch.qos.logback.core
-   com.fasterxml.jackson.core:jackson-annotations:jar:2.19.2:compile -- module com.fasterxml.jackson.annotation
-   com.fasterxml.jackson.core:jackson-core:jar:2.19.2:compile -- module com.fasterxml.jackson.core
+   ch.qos.logback:logback-classic:jar:1.5.32:runtime -- module ch.qos.logback.classic
+   ch.qos.logback:logback-core:jar:1.5.32:runtime -- module ch.qos.logback.core
+   com.fasterxml.jackson.core:jackson-annotations:jar:2.21:compile -- module com.fasterxml.jackson.annotation
+   com.fasterxml.jackson.core:jackson-core:jar:2.21.2:compile -- module com.fasterxml.jackson.core
    io.micronaut.serde:micronaut-serde-api:jar:2.16.2:compile -- module io.micronaut.serde.micronaut_serde_api [auto]
    io.micronaut.serde:micronaut-serde-jackson:jar:2.16.2:compile -- module io.micronaut.serde.micronaut_serde_jackson [auto]
    io.micronaut.serde:micronaut-serde-support:jar:2.16.2:runtime -- module io.micronaut.serde.micronaut_serde_support [auto]
-   io.micronaut:micronaut-aop:jar:4.10.9:compile -- module io.micronaut.micronaut_aop [auto]
-   io.micronaut:micronaut-buffer-netty:jar:4.10.9:compile -- module io.micronaut.micronaut_buffer_netty [auto]
-   io.micronaut:micronaut-context-propagation:jar:4.10.9:compile -- module io.micronaut.micronaut_context_propagation [auto]
-   io.micronaut:micronaut-context:jar:4.10.9:compile -- module io.micronaut.micronaut_context [auto]
-   io.micronaut:micronaut-core-reactive:jar:4.10.9:compile -- module io.micronaut.micronaut_core_reactive [auto]
-   io.micronaut:micronaut-core:jar:4.10.9:compile -- module io.micronaut.micronaut_core [auto]
-   io.micronaut:micronaut-http-netty:jar:4.10.9:compile -- module io.micronaut.micronaut_http_netty [auto]
-   io.micronaut:micronaut-http-server-netty:jar:4.10.9:compile -- module io.micronaut.micronaut_http_server_netty [auto]
-   io.micronaut:micronaut-http-server:jar:4.10.9:compile -- module io.micronaut.micronaut_http_server [auto]
-   io.micronaut:micronaut-http:jar:4.10.9:compile -- module io.micronaut.micronaut_http [auto]
-   io.micronaut:micronaut-inject:jar:4.10.9:compile -- module io.micronaut.micronaut_inject [auto]
-   io.micronaut:micronaut-jackson-core:jar:4.10.9:compile -- module io.micronaut.micronaut_jackson_core [auto]
-   io.micronaut:micronaut-json-core:jar:4.10.9:compile -- module io.micronaut.micronaut_json_core [auto]
-   io.micronaut:micronaut-router:jar:4.10.9:compile -- module io.micronaut.micronaut_router [auto]
-   io.netty:netty-buffer:jar:4.2.7.Final:compile -- module io.netty.buffer
-   io.netty:netty-codec-base:jar:4.2.7.Final:compile -- module io.netty.codec
-   io.netty:netty-codec-compression:jar:4.2.7.Final:compile -- module io.netty.codec.compression
-   io.netty:netty-codec-http2:jar:4.2.7.Final:compile -- module io.netty.codec.http2
-   io.netty:netty-codec-http:jar:4.2.7.Final:compile -- module io.netty.codec.http
-   io.netty:netty-common:jar:4.2.7.Final:compile -- module io.netty.common
-   io.netty:netty-handler:jar:4.2.7.Final:compile -- module io.netty.handler
-   io.netty:netty-resolver:jar:4.2.7.Final:compile -- module io.netty.resolver
-   io.netty:netty-transport-native-unix-common:jar:4.2.7.Final:compile -- module io.netty.transport.unix.common
-   io.netty:netty-transport:jar:4.2.7.Final:compile -- module io.netty.transport
+   io.micronaut:micronaut-aop:jar:4.10.23:compile -- module io.micronaut.micronaut_aop [auto]
+   io.micronaut:micronaut-buffer-netty:jar:4.10.23:compile -- module io.micronaut.micronaut_buffer_netty [auto]
+   io.micronaut:micronaut-context-propagation:jar:4.10.23:compile -- module io.micronaut.micronaut_context_propagation [auto]
+   io.micronaut:micronaut-context:jar:4.10.23:compile -- module io.micronaut.micronaut_context [auto]
+   io.micronaut:micronaut-core-reactive:jar:4.10.23:compile -- module io.micronaut.micronaut_core_reactive [auto]
+   io.micronaut:micronaut-core:jar:4.10.23:compile -- module io.micronaut.micronaut_core [auto]
+   io.micronaut:micronaut-http-netty:jar:4.10.23:compile -- module io.micronaut.micronaut_http_netty [auto]
+   io.micronaut:micronaut-http-server-netty:jar:4.10.23:compile -- module io.micronaut.micronaut_http_server_netty [auto]
+   io.micronaut:micronaut-http-server:jar:4.10.23:compile -- module io.micronaut.micronaut_http_server [auto]
+   io.micronaut:micronaut-http:jar:4.10.23:compile -- module io.micronaut.micronaut_http [auto]
+   io.micronaut:micronaut-inject:jar:4.10.23:compile -- module io.micronaut.micronaut_inject [auto]
+   io.micronaut:micronaut-jackson-core:jar:4.10.23:compile -- module io.micronaut.micronaut_jackson_core [auto]
+   io.micronaut:micronaut-json-core:jar:4.10.23:compile -- module io.micronaut.micronaut_json_core [auto]
+   io.micronaut:micronaut-router:jar:4.10.23:compile -- module io.micronaut.micronaut_router [auto]
+   io.netty:netty-buffer:jar:4.2.13.Final:compile -- module io.netty.buffer
+   io.netty:netty-codec-base:jar:4.2.13.Final:compile -- module io.netty.codec
+   io.netty:netty-codec-compression:jar:4.2.13.Final:compile -- module io.netty.codec.compression
+   io.netty:netty-codec-http2:jar:4.2.13.Final:compile -- module io.netty.codec.http2
+   io.netty:netty-codec-http:jar:4.2.13.Final:compile -- module io.netty.codec.http
+   io.netty:netty-common:jar:4.2.13.Final:compile -- module io.netty.common
+   io.netty:netty-handler:jar:4.2.13.Final:compile -- module io.netty.handler
+   io.netty:netty-resolver:jar:4.2.13.Final:compile -- module io.netty.resolver
+   io.netty:netty-transport-native-unix-common:jar:4.2.13.Final:compile -- module io.netty.transport.unix.common
+   io.netty:netty-transport:jar:4.2.13.Final:compile -- module io.netty.transport
    io.projectreactor:reactor-core:jar:3.7.12:runtime -- module reactor.core [auto]
    jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile -- module jakarta.annotation
    jakarta.inject:jakarta.inject-api:jar:2.0.1:compile -- module jakarta.inject
@@ -420,7 +509,7 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 1 | 1 | 0 | 0 |
 ```
-   org.yaml:snakeyaml:jar:2.5:compile -- module org.yaml.snakeyaml
+   org.yaml:snakeyaml:jar:2.6:compile -- module org.yaml.snakeyaml
 ```
 
 ## spring-boot-3
@@ -526,7 +615,7 @@ java src/GenerateReadme.java > README.md
    dev.tamboui:tamboui-annotations:jar:0.1.0:compile -- module dev.tamboui.annotations
    dev.tamboui:tamboui-core:jar:0.1.0:compile -- module dev.tamboui.core
    dev.tamboui:tamboui-css:jar:0.1.0:compile -- module dev.tamboui.css
-   dev.tamboui:tamboui-panama-backend:jar:0.1.0:compile -- module dev.tamboui.panama.backend
+   dev.tamboui:tamboui-panama-backend:jar:0.3.0:compile -- module dev.tamboui.panama.backend
    dev.tamboui:tamboui-toolkit:jar:0.1.0:compile -- module dev.tamboui.toolkit
    dev.tamboui:tamboui-tui:jar:0.1.0:compile -- module dev.tamboui.tui
    dev.tamboui:tamboui-widgets:jar:0.1.0:compile -- module dev.tamboui.widgets
