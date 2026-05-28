@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "maven"
-    directory: "/"
+    directories: "/etc/*/"
     schedule:
       interval: "daily"
     ignore:
