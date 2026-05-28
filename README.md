@@ -20,9 +20,10 @@ its dependencies are at **Level 3** on the [Modular Maturity Model](https://nipa
 |[apache-commons-io-2](#apache-commons-io-2)| 1 | 1 | 0 | 0 |
 |[apache-commons-lang-3](#apache-commons-lang-3)| 1 | 1 | 0 | 0 |
 |[asm-9](#asm-9)| 1 | 1 | 0 | 0 |
+|[commonmark-0](#commonmark-0)| 1 | 1 | 0 | 0 |
 |[gson-2](#gson-2)| 2 | 2 | 0 | 0 |
 |[guava-33](#guava-33)| 6 | 5 | 0 | 1 |
-|[helidon-se-4](#helidon-se-4)| 74 | 56 | 11 | 7 |
+|[helidon-se-4](#helidon-se-4)| 79 | 58 | 14 | 7 |
 |[jackson-core-2](#jackson-core-2)| 1 | 1 | 0 | 0 |
 |[jackson-databind-2](#jackson-databind-2)| 3 | 3 | 0 | 0 |
 |[javalin-2](#javalin-2)| 21 | 20 | 0 | 1 |
@@ -50,8 +51,9 @@ java src/AddProject.java <Name> <GroupId>:<ArtifactId>:<Version>
 ---
 Rebuild the `README.md` file by running the following commands:
 ```shell
-mvn --batch-mode --no-transfer-progress -DoutputFile=resolved.txt org.apache.maven.plugins:maven-dependency-plugin:3.10.0:resolve
+mvn --file etc/NAME --batch-mode --no-transfer-progress -DoutputFile=resolved.txt org.apache.maven.plugins:maven-dependency-plugin:3.10.0:resolve
 ```
+Replace `NAME` in above's command for each project of interest.
 ```shell
 java src/GenerateReadme.java > README.md
 ```
@@ -63,7 +65,7 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 1 | 1 | 0 | 0 |
 ```
-   commons-codec:commons-codec:jar:1.20.0:compile -- module org.apache.commons.codec
+   commons-codec:commons-codec:jar:1.22.0:compile -- module org.apache.commons.codec
 ```
 
 ## apache-commons-exec-1
@@ -79,7 +81,7 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 1 | 1 | 0 | 0 |
 ```
-   commons-io:commons-io:jar:2.21.0:compile -- module org.apache.commons.io
+   commons-io:commons-io:jar:2.22.0:compile -- module org.apache.commons.io
 ```
 
 ## apache-commons-lang-3
@@ -95,7 +97,15 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 1 | 1 | 0 | 0 |
 ```
-   org.ow2.asm:asm:jar:9.9:compile -- module org.objectweb.asm
+   org.ow2.asm:asm:jar:9.10.1:compile -- module org.objectweb.asm
+```
+
+## commonmark-0
+| Dependencies | 🧩 | 🟢 | ⚪ |
+|-------------:|----:|----:|----:|
+| 1 | 1 | 0 | 0 |
+```
+   org.commonmark:commonmark:jar:0.28.0:compile -- module org.commonmark
 ```
 
 ## gson-2
@@ -103,8 +113,8 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 2 | 2 | 0 | 0 |
 ```
-   com.google.code.gson:gson:jar:2.13.2:compile -- module com.google.gson
-   com.google.errorprone:error_prone_annotations:jar:2.41.0:compile -- module com.google.errorprone.annotations
+   com.google.code.gson:gson:jar:2.14.0:compile -- module com.google.gson
+   com.google.errorprone:error_prone_annotations:jar:2.48.0:compile -- module com.google.errorprone.annotations
 ```
 
 ## guava-33
@@ -123,66 +133,71 @@ java src/GenerateReadme.java > README.md
 ## helidon-se-4
 | Dependencies | 🧩 | 🟢 | ⚪ |
 |-------------:|----:|----:|----:|
-| 74 | 56 | 11 | 7 |
+| 79 | 58 | 14 | 7 |
 ```
-   com.fasterxml.jackson.core:jackson-annotations:jar:2.20:compile -- module com.fasterxml.jackson.annotation
-   com.fasterxml.jackson.core:jackson-core:jar:2.20.0:compile -- module com.fasterxml.jackson.core
-   com.fasterxml.jackson.core:jackson-databind:jar:2.20.0:compile -- module com.fasterxml.jackson.databind
-   com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.20.0:compile -- module com.fasterxml.jackson.datatype.jdk8
-   com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.20.0:compile -- module com.fasterxml.jackson.datatype.jsr310
-   com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.20.0:compile -- module com.fasterxml.jackson.module.paramnames
-   io.helidon.builder:helidon-builder-api:jar:4.3.2:compile -- module io.helidon.builder.api
-   io.helidon.common.concurrency:helidon-common-concurrency-limits:jar:4.3.2:compile -- module io.helidon.common.concurrency.limits
-   io.helidon.common.features:helidon-common-features-api:jar:4.3.2:compile -- module io.helidon.common.features.api
-   io.helidon.common.features:helidon-common-features-metadata:jar:4.3.2:compile -- module io.helidon.common.features.metadata
-   io.helidon.common.features:helidon-common-features:jar:4.3.2:compile -- module io.helidon.common.features
-   io.helidon.common:helidon-common-buffers:jar:4.3.2:compile -- module io.helidon.common.buffers
-   io.helidon.common:helidon-common-config:jar:4.3.2:compile -- module io.helidon.common.config
-   io.helidon.common:helidon-common-configurable:jar:4.3.2:compile -- module io.helidon.common.configurable
-   io.helidon.common:helidon-common-context:jar:4.3.2:compile -- module io.helidon.common.context
-   io.helidon.common:helidon-common-key-util:jar:4.3.2:compile -- module io.helidon.common.pki
-   io.helidon.common:helidon-common-mapper:jar:4.3.2:compile -- module io.helidon.common.mapper
-   io.helidon.common:helidon-common-media-type:jar:4.3.2:compile -- module io.helidon.common.media.type
-   io.helidon.common:helidon-common-parameters:jar:4.3.2:compile -- module io.helidon.common.parameters
-   io.helidon.common:helidon-common-resumable:jar:4.3.2:compile -- module io.helidon.common.resumable
-   io.helidon.common:helidon-common-security:jar:4.3.2:compile -- module io.helidon.common.security
-   io.helidon.common:helidon-common-socket:jar:4.3.2:compile -- module io.helidon.common.socket
-   io.helidon.common:helidon-common-task:jar:4.3.2:compile -- module io.helidon.common.task
-   io.helidon.common:helidon-common-tls:jar:4.3.2:compile -- module io.helidon.common.tls
-   io.helidon.common:helidon-common-types:jar:4.3.2:compile -- module io.helidon.common.types
-   io.helidon.common:helidon-common-uri:jar:4.3.2:compile -- module io.helidon.common.uri
-   io.helidon.common:helidon-common:jar:4.3.2:compile -- module io.helidon.common
-   io.helidon.config:helidon-config-yaml:jar:4.3.2:compile -- module io.helidon.config.yaml
-   io.helidon.config:helidon-config:jar:4.3.2:compile -- module io.helidon.config
-   io.helidon.cors:helidon-cors:jar:4.3.2:compile -- module io.helidon.cors
-   io.helidon.health:helidon-health-checks:jar:4.3.2:compile -- module io.helidon.health.checks
-   io.helidon.health:helidon-health:jar:4.3.2:compile -- module io.helidon.health
-   io.helidon.http.encoding:helidon-http-encoding:jar:4.3.2:compile -- module io.helidon.http.encoding
-   io.helidon.http.media:helidon-http-media-jackson:jar:4.3.2:compile -- module io.helidon.http.media.jackson
-   io.helidon.http.media:helidon-http-media-jsonp:jar:4.3.2:compile -- module io.helidon.http.media.jsonp
-   io.helidon.http.media:helidon-http-media:jar:4.3.2:compile -- module io.helidon.http.media
-   io.helidon.http:helidon-http:jar:4.3.2:compile -- module io.helidon.http
-   io.helidon.logging:helidon-logging-common:jar:4.3.2:compile -- module io.helidon.logging.common
-   io.helidon.logging:helidon-logging-jul:jar:4.3.2:runtime -- module io.helidon.logging.jul
-   io.helidon.metadata:helidon-metadata-hson:jar:4.3.2:compile -- module io.helidon.metadata.hson
-   io.helidon.metadata:helidon-metadata:jar:4.3.2:compile -- module io.helidon.metadata
-   io.helidon.metrics.providers:helidon-metrics-providers-micrometer:jar:4.3.2:compile -- module io.helidon.metrics.providers.micrometer
-   io.helidon.metrics:helidon-metrics-api:jar:4.3.2:compile -- module io.helidon.metrics.api
-   io.helidon.metrics:helidon-metrics-system-meters:jar:4.3.2:runtime -- module io.helidon.metrics.systemmeters
-   io.helidon.service:helidon-service-metadata:jar:4.3.2:compile -- module io.helidon.service.metadata
-   io.helidon.service:helidon-service-registry:jar:4.3.2:compile -- module io.helidon.service.registry
-   io.helidon.webserver.observe:helidon-webserver-observe-health:jar:4.3.2:compile -- module io.helidon.webserver.observe.health
-   io.helidon.webserver.observe:helidon-webserver-observe-metrics:jar:4.3.2:compile -- module io.helidon.webserver.observe.metrics
-   io.helidon.webserver.observe:helidon-webserver-observe:jar:4.3.2:compile -- module io.helidon.webserver.observe
-   io.helidon.webserver:helidon-webserver-cors:jar:4.3.2:compile -- module io.helidon.webserver.cors
-   io.helidon.webserver:helidon-webserver-service-common:jar:4.3.2:compile -- module io.helidon.servicecommon
-   io.helidon.webserver:helidon-webserver:jar:4.3.2:compile -- module io.helidon.webserver
-   io.helidon:helidon:jar:4.3.2:compile -- module io.helidon
+   com.fasterxml.jackson.core:jackson-annotations:jar:2.21:compile -- module com.fasterxml.jackson.annotation
+   com.fasterxml.jackson.core:jackson-core:jar:2.21.1:compile -- module com.fasterxml.jackson.core
+   com.fasterxml.jackson.core:jackson-databind:jar:2.21.1:compile -- module com.fasterxml.jackson.databind
+   com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.21.1:compile -- module com.fasterxml.jackson.datatype.jdk8
+   com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.21.1:compile -- module com.fasterxml.jackson.datatype.jsr310
+   com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.21.1:compile -- module com.fasterxml.jackson.module.paramnames
+   com.google.protobuf:protobuf-java:jar:4.31.1:runtime -- module com.google.protobuf [auto]
+   io.helidon.builder:helidon-builder-api:jar:4.4.1:compile -- module io.helidon.builder.api
+   io.helidon.common.concurrency:helidon-common-concurrency-limits:jar:4.4.1:compile -- module io.helidon.common.concurrency.limits
+   io.helidon.common.features:helidon-common-features-api:jar:4.4.1:compile -- module io.helidon.common.features.api
+   io.helidon.common.features:helidon-common-features-metadata:jar:4.4.1:compile -- module io.helidon.common.features.metadata
+   io.helidon.common.features:helidon-common-features:jar:4.4.1:compile -- module io.helidon.common.features
+   io.helidon.common:helidon-common-buffers:jar:4.4.1:compile -- module io.helidon.common.buffers
+   io.helidon.common:helidon-common-config:jar:4.4.1:compile -- module io.helidon.common.config
+   io.helidon.common:helidon-common-configurable:jar:4.4.1:compile -- module io.helidon.common.configurable
+   io.helidon.common:helidon-common-context:jar:4.4.1:compile -- module io.helidon.common.context
+   io.helidon.common:helidon-common-key-util:jar:4.4.1:compile -- module io.helidon.common.pki
+   io.helidon.common:helidon-common-mapper:jar:4.4.1:compile -- module io.helidon.common.mapper
+   io.helidon.common:helidon-common-media-type:jar:4.4.1:compile -- module io.helidon.common.media.type
+   io.helidon.common:helidon-common-parameters:jar:4.4.1:compile -- module io.helidon.common.parameters
+   io.helidon.common:helidon-common-resumable:jar:4.4.1:compile -- module io.helidon.common.resumable
+   io.helidon.common:helidon-common-security:jar:4.4.1:compile -- module io.helidon.common.security
+   io.helidon.common:helidon-common-socket:jar:4.4.1:compile -- module io.helidon.common.socket
+   io.helidon.common:helidon-common-task:jar:4.4.1:compile -- module io.helidon.common.task
+   io.helidon.common:helidon-common-tls:jar:4.4.1:compile -- module io.helidon.common.tls
+   io.helidon.common:helidon-common-types:jar:4.4.1:compile -- module io.helidon.common.types
+   io.helidon.common:helidon-common-uri:jar:4.4.1:compile -- module io.helidon.common.uri
+   io.helidon.common:helidon-common:jar:4.4.1:compile -- module io.helidon.common
+   io.helidon.config:helidon-config-yaml:jar:4.4.1:compile -- module io.helidon.config.yaml
+   io.helidon.config:helidon-config:jar:4.4.1:compile -- module io.helidon.config
+   io.helidon.cors:helidon-cors:jar:4.4.1:compile -- module io.helidon.cors
+   io.helidon.health:helidon-health-checks:jar:4.4.1:compile -- module io.helidon.health.checks
+   io.helidon.health:helidon-health:jar:4.4.1:compile -- module io.helidon.health
+   io.helidon.http.encoding:helidon-http-encoding:jar:4.4.1:compile -- module io.helidon.http.encoding
+   io.helidon.http.media:helidon-http-media-jackson:jar:4.4.1:compile -- module io.helidon.http.media.jackson
+   io.helidon.http.media:helidon-http-media-json:jar:4.4.1:compile -- module io.helidon.http.media.json
+   io.helidon.http.media:helidon-http-media-jsonp:jar:4.4.1:compile -- module io.helidon.http.media.jsonp
+   io.helidon.http.media:helidon-http-media:jar:4.4.1:compile -- module io.helidon.http.media
+   io.helidon.http:helidon-http:jar:4.4.1:compile -- module io.helidon.http
+   io.helidon.json:helidon-json:jar:4.4.1:compile -- module io.helidon.json
+   io.helidon.logging:helidon-logging-common:jar:4.4.1:compile -- module io.helidon.logging.common
+   io.helidon.logging:helidon-logging-jul:jar:4.4.1:runtime -- module io.helidon.logging.jul
+   io.helidon.metadata:helidon-metadata-hson:jar:4.4.1:compile -- module io.helidon.metadata.hson
+   io.helidon.metadata:helidon-metadata:jar:4.4.1:compile -- module io.helidon.metadata
+   io.helidon.metrics.providers:helidon-metrics-providers-micrometer:jar:4.4.1:compile -- module io.helidon.metrics.providers.micrometer
+   io.helidon.metrics:helidon-metrics-api:jar:4.4.1:compile -- module io.helidon.metrics.api
+   io.helidon.metrics:helidon-metrics-system-meters:jar:4.4.1:runtime -- module io.helidon.metrics.systemmeters
+   io.helidon.service:helidon-service-metadata:jar:4.4.1:compile -- module io.helidon.service.metadata
+   io.helidon.service:helidon-service-registry:jar:4.4.1:compile -- module io.helidon.service.registry
+   io.helidon.webserver.observe:helidon-webserver-observe-health:jar:4.4.1:compile -- module io.helidon.webserver.observe.health
+   io.helidon.webserver.observe:helidon-webserver-observe-metrics:jar:4.4.1:compile -- module io.helidon.webserver.observe.metrics
+   io.helidon.webserver.observe:helidon-webserver-observe:jar:4.4.1:compile -- module io.helidon.webserver.observe
+   io.helidon.webserver:helidon-webserver-cors:jar:4.4.1:compile -- module io.helidon.webserver.cors
+   io.helidon.webserver:helidon-webserver-service-common:jar:4.4.1:compile -- module io.helidon.servicecommon
+   io.helidon.webserver:helidon-webserver:jar:4.4.1:compile -- module io.helidon.webserver
+   io.helidon:helidon:jar:4.4.1:compile -- module io.helidon
    io.micrometer:micrometer-commons:jar:1.15.2:compile -- module micrometer.commons [auto]
    io.micrometer:micrometer-core:jar:1.15.2:compile -- module micrometer.core [auto]
    io.micrometer:micrometer-observation:jar:1.15.2:compile -- module micrometer.observation [auto]
+   io.micrometer:micrometer-registry-otlp:jar:1.15.2:compile -- module micrometer.registry.otlp [auto]
    io.micrometer:micrometer-registry-prometheus-simpleclient:jar:1.15.2:compile -- module micrometer.registry.prometheus.simpleclient [auto]
    io.micrometer:micrometer-registry-prometheus:jar:1.15.2:compile -- module micrometer.registry.prometheus [auto]
+   io.opentelemetry.proto:opentelemetry-proto:jar:1.5.0-alpha:runtime -- module io.opentelemetry.proto [auto]
    io.prometheus:prometheus-metrics-config:jar:1.3.10:compile -- module io.prometheus.metrics.config [auto]
    io.prometheus:prometheus-metrics-core:jar:1.3.10:compile -- module io.prometheus.metrics.core [auto]
    io.prometheus:prometheus-metrics-exposition-formats:jar:1.3.10:runtime -- module io.prometheus.metrics.expositionformats [auto]
@@ -612,11 +627,11 @@ java src/GenerateReadme.java > README.md
 |-------------:|----:|----:|----:|
 | 7 | 7 | 0 | 0 |
 ```
-   dev.tamboui:tamboui-annotations:jar:0.1.0:compile -- module dev.tamboui.annotations
-   dev.tamboui:tamboui-core:jar:0.1.0:compile -- module dev.tamboui.core
-   dev.tamboui:tamboui-css:jar:0.1.0:compile -- module dev.tamboui.css
+   dev.tamboui:tamboui-annotations:jar:0.3.0:compile -- module dev.tamboui.annotations
+   dev.tamboui:tamboui-core:jar:0.3.0:compile -- module dev.tamboui.core
+   dev.tamboui:tamboui-css:jar:0.3.0:compile -- module dev.tamboui.css
    dev.tamboui:tamboui-panama-backend:jar:0.3.0:compile -- module dev.tamboui.panama.backend
-   dev.tamboui:tamboui-toolkit:jar:0.1.0:compile -- module dev.tamboui.toolkit
-   dev.tamboui:tamboui-tui:jar:0.1.0:compile -- module dev.tamboui.tui
-   dev.tamboui:tamboui-widgets:jar:0.1.0:compile -- module dev.tamboui.widgets
+   dev.tamboui:tamboui-toolkit:jar:0.3.0:compile -- module dev.tamboui.toolkit
+   dev.tamboui:tamboui-tui:jar:0.3.0:compile -- module dev.tamboui.tui
+   dev.tamboui:tamboui-widgets:jar:0.3.0:compile -- module dev.tamboui.widgets
 ```
