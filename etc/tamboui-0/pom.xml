@@ -4,21 +4,29 @@
     <groupId>org.example</groupId>
     <artifactId>tamboui-0</artifactId>
     <version>1</version>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>dev.tamboui</groupId>
+                <artifactId>tamboui-bom</artifactId>
+                <version>0.3.0</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>dev.tamboui</groupId>
             <artifactId>tamboui-core</artifactId>
-            <version>0.1.0</version>
         </dependency>
         <dependency>
             <groupId>dev.tamboui</groupId>
             <artifactId>tamboui-panama-backend</artifactId>
-            <version>0.3.0</version>
         </dependency>
         <dependency>
             <groupId>dev.tamboui</groupId>
             <artifactId>tamboui-toolkit</artifactId>
-            <version>0.1.0</version>
         </dependency>
     </dependencies>
 </project>
