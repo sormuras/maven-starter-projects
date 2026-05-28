@@ -82,8 +82,9 @@ class GenerateReadme {
         ---
         Rebuild the `README.md` file by running the following commands:
         ```shell
-        mvn --batch-mode --no-transfer-progress -DoutputFile=resolved.txt org.apache.maven.plugins:maven-dependency-plugin:3.10.0:resolve
+        mvn --file etc/NAME --batch-mode --no-transfer-progress -DoutputFile=resolved.txt org.apache.maven.plugins:maven-dependency-plugin:3.10.0:resolve
         ```
+        Replace `NAME` in above's command for each project of interest.
         ```shell
         java src/GenerateReadme.java > README.md
         ```

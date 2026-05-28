@@ -49,13 +49,5 @@ class AddProject {
             .replace("${group}", group)
             .replace("${artifact}", artifact)
             .replace("${version}", version));
-    // insert project as a Maven module and sort them all
-    var path = Path.of("pom.xml");
-    var lines = new ArrayList<>(Files.readAllLines(path));
-    var start = lines.indexOf("    <modules>") + 1;
-    lines.add(start, "        <module>etc/%s</module>".formatted(name));
-    var end = lines.indexOf("    </modules>");
-    Collections.sort(lines.subList(start, end));
-    Files.write(path, lines);
   }
 }
