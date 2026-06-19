@@ -9,7 +9,7 @@
             <dependency>
                 <groupId>dev.tamboui</groupId>
                 <artifactId>tamboui-bom</artifactId>
-                <version>0.3.0</version>
+                <version>0.4.0</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
