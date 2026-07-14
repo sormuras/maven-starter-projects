@@ -6,7 +6,7 @@
     <version>1</version>
 
     <properties>
-        <lwjgl.version>3.4.1</lwjgl.version>
+        <lwjgl.version>3.4.2</lwjgl.version>
     </properties>
 
     <profiles>
